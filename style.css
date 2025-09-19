@@ -1,3 +1,17 @@
-html {
-    color:tomato
+body {
+    font-family: "Oswald", helvetica, arial, sans-serif;
+    color:red;
+    padding: 3rem;
 }
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    color: black;
+    font-size: 4rem;
+}
+
+.subheading {
+    color:orange; 
+    font-size: 2 rem;
+}
+*:not (:nth-first) { margin-block-start: 1em; }
