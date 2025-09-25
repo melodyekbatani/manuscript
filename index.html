@@ -17,6 +17,8 @@
                 <article class="reading">
                     <section class="intro">
                             <p class="author">Anthony Froshaugh, 
+<!-- I also leant about the time element on mdn and from the example! -->
+<!-- also not sure about the punctuation/spacing and if it falls after the code elements and the cite element in general -->
                             <time datetime="1967">1967</time>
                             </p>
                     <aside>
@@ -33,11 +35,10 @@
     <blockquote>
         Grid structures are implicit in the word typography. After half a millennium it is time for an understanding and re-assessment.
     </blockquote>
-
     <p> 
         To mention both typographic, and, in the same breath/sentence, grids, is strictly tautologous. The word typography means to write/print using standard elements; to use standard elements implies some modular relationship between such elements; since such relationship is two-dimensional, it implies the determination of dimensions which are both horizontal and vertical. 
     </p>
-
+<!-- not entierely sure about superscript and if its the right tag to the footnote references here - check with Micheal and Rijk -->
     <p>
         Consider the problems which faced Gutenberg, some five hundred years ago, in helping <q>the eternal God to bring</q> into existence the laudable art, by which men now print books, and multiply them so greatly... <sup>1</sup> Item, the said Johann Gutenberg knew of the invention of paper (which had reached Cologne by 1320); item, knew of the development of suitable inks ... of the general features of the cloth-and winepress, of the arts of the engravers, of the die-and punch-making of the goldsmiths (after all, he was a goldsmith himself).<sup>2</sup> What did Gutenberg invent?
     </p>
@@ -46,7 +47,7 @@
         In order that letters, characters, may be arranged in lines, line upon line, for printing, each letter must be of the same depth or body-size as its neighbours, irrespective of its individual width: the vertical dimension (y in Cartesian co-ordinates) is critical. If, as seems historically probable, Gutenberg's invention was that of the adjustable type-mould, tolerant of characters of differing widths, intolerant of divergence in body-size [1: overleaf], this invention acted as a vertical grid upon the setting, the form, the page. 
     </p>
 </section>
-
+    <!-- In case u (future me) is wondering, I dropped the last paragraph of this section to the next main section, it was being cut off half way in the original text -->
 <section class="footnotes">
                 <p>
                     <sup>1</sup> Chronicle of Cologne, 1499.
@@ -54,14 +55,17 @@
                 
                 <p>
                     <sup>2</sup> A.P.Usher, A history of mechanical inventions, Cambridge Mass: Harvard University Press, 1954. Chapter 10 deals with "The invention of printing'; however, Chapter 4 on "The emergence of novelty in thought and action'should not be missed.
+    <!-- okay so should the chapter names also be cite elements... overall confused about cite elements since this text is full of them -->
                 </p>
 </section>
 
-            <!-- For this next part, try to use CSS styling to create text on path and pair with a type writer looking font -->
-            <!-- Not sure if this is correct for german/latin language -->
-    </html>
-    <html lang="de">
-        <figure>
+<section class="figure-1">
+    <!-- For this next part, might try CSS styling to create text on path and pair with a type writer looking font -->
+    <!-- Not sure if this is correct for german/latin/french languages -->
+    <!-- Mdn told me to put figcaption inside figure, I'm going to go with that... -->
+    <!-- Also I think the text here might be a blockquote?? but still unsure -->     
+    <figure lang="de">
+        <blockquote>
                 Die unregelmäfsigkeit diefes fatzes wird durch die 
                 typen der buchftaben a und e verurfacht; fie find zwar
                 gröfser als die anderen lettern, bei genauer mefsung
@@ -71,19 +75,18 @@
                 der wörter und linien zum teil zerftört wird Wenn das 
                 Bröfsere a und e noch zu einem dutzend linien verwendet werden follte, 
                 fo wäre der lefer gar nicht mer im ftande den fatz zu lefen.
-        </figure>  
-    </html>
-    <html lang="en">
-                <p>
-                    <sub>
-                    [1] Illegibility resulting from the mixture of types of differing body sizes (the 'a' and 'e 
-                    are 13 thou larger than the other letters). H. Meisner and J. Luther, Die Erfindung der
-                    Buchdruckerkunst, Bielefeld & Ieipzig: Velhagen & Klasing, 1900.
-                    </sub>
-                </p>
-    </html>
-    <html lang="la">
-        <figure>
+        </blockquote>
+
+        <figcaption lang="en">
+                    <sup>1</sup> Illegibility resulting from the mixture of types of differing body sizes (the 'a' and 'e are 13 thou larger than the other letters). <cite>H. Meisner and J. Luther, Die Erfindung der Buchdruckerkunst, Bielefeld & Ieipzig: Velhagen & Klasing</cite>, <time datetime="1900">1900</time>.
+        </figcaption>
+    </figure>  
+</section>
+
+    <!-- some of my latin letters are being highlighted here, not sure what that means...-->   
+<section class="figure-2">
+    <figure lang="la">
+        <blockquote>
                 Edilcipline rorupilttia Lura
                 tgodilapline diledio E:r dilec
                 no ultodialegi illi i-LultaDiio autlegum rõlummatio
@@ -98,21 +101,17 @@
                 Ee qufadmodu fada ln refeta
                 anonablondam a vobis la
                 namamadi:Tdabimidonaduîtais meligabo: r ponaí
-        </figure>     
-        </html>
-        <html lang="en">
-                <p>
-                    <figcaption>
-                    <sub>
-                    [2] Word and syllable abbreviations in <cite>Gutenberg's 36-line Bible.</cite> Note that the hyphens 
-                    override the measure.
-                    </sub>
-                    </figcaption>
-                </p>
-        </html>
+        </blockquote>
 
-        <html lang="la"> 
-         <figure> 
+        <figcaption lang="en">
+                    <sup>2</sup> Word and syllable abbreviations in <cite>Gutenberg's 36-line Bible</cite>.Note that the hyphens override the measure.
+        </figcaption>
+    </figure>    
+</section>
+
+<section class="figure-3">
+    <figure lang="la"> 
+        <blockquote>
                 S CYTHIA intra Imau 
                 montem termínatur ab 
                 occafu Sarmaria Aliati
@@ -131,150 +130,82 @@
                 Rbymmi f ofta 
                 Daicis ff oftia 
                 Iaxartiff' oftia
-         </figure>
-        </html>
+        </blockquote>
 
-          <html lang="en"> 
-                 <p>
-                    <figcaption>
-                    <sub>
-                    [3] Ptolemy, <cite>Cosmographia, Ulm, </cite> <time>1482.</time> Note the comparatively small size of the numerator 
-                    in fractions; compare Stock Exchange fractions in financial columns for one ofthe alternative solutions.
-                    </sub>
-                    </figcaption>
-                </p>
-            </html>
+        <figcaption lang="en"> 
+            <sup>3</sup> Ptolemy, <cite> Cosmographia, Ulm, </cite> <time datetime="1428">1482.</time> Note the comparatively small size of the numerator in fractions; compare Stock Exchange fractions in financial columns for one ofthe alternative solutions.
+        </figcaption>
+    </figure>    
+</section>
 
-<html="fe">
-         <figure>
-                c'etait 
-                issu stellaire 
-                le nombre
-                EXISTAT-IL
-                autrement qu'hallucination eparse d'agonie
-                COMMENCAT-IL ET CESSAT-IL
-                sourdant que nie et clos quand apparu 
-                par quelque profusion repandue en rarete 
-                SE CHIFFRAT-IL
-                evidence de la somme pour peu qu'une
-                ILLUMINAT-IL 
-                ce serait
-                pire
-                non 
-                davantage ni moins
-                mais autant indifferemnent
-                LE HASARD
-         </figure>
-</html>
-                <p>
-                    <figcaption>
-                    <sub>
-                    [4] Stéphane Mallarmé, 'Un coup de dés', Cosmopolis, May 1897. Consider also the 
-                    problems necessarily raised by poets in a socio-religious sense, discussed by Stefan 
-                    Themerson, Cardinal Pölätüo (London: Gaberbocchus Press, 1961); note also the problems 
-                    of relating the manuscript to typographical constraints, discussed by the same author in
-                    a most creative article 'Idéogrammes lyriques' (Typographica, no. 14, 1966, pp. 2-24).
-                    </sub>
-                    </figcaption>
-                </p>
-<html= lang="en">
-     <p>
-       But the length of line, the width of setting, provided another dimension. It seem that this horizontal dimension (x) of the grid was determined by convention, and embodied in the Procrustean bed of the composing stick - probably at that time,as more lately in the case of 13-pica fixed newspaper sticks, an unadjustable hod into which the standard 
-       bricks of characters could be successionally piled.
-    </p>
+<!-- choosing not to include this one because it doesn't add much interms of the explaining the content, also looks image like. Left it here in case I change my mind.
+c'etait issu stellaire le nombre EXISTAT-IL autrement qu'hallucination eparse d'agonie COMMENCAT-IL ET CESSAT-IL sourdant que nie et clos quand apparu par quelque profusion repandue en rarete SE CHIFFRAT-IL evidence de la somme pour peu qu'une ILLUMINAT-IL ce serait pire non davantage ni moins mais autant indifferemnent LE HASARD
+[4] Stéphane Mallarmé, 'Un coup de dés', Cosmopolis, May 1897. Consider also the problems necessarily raised by poets in a socio-religious sense, discussed by Stefan Themerson, Cardinal Pölätüo (London: Gaberbocchus Press, 1961); note also the problems of relating the manuscript to typographical constraints, discussed by the same author in a most creative article 'Idéogrammes lyriques' (Typographica, no. 14, 1966, pp. 2-24). -->
 
-     <p>
-       Of course, the fixing of a horizontal dimension or 'measure' demands conventions of variable spacing between words,* or of abbreviation of the words themselves [2], if all the characters align at left, where the line begins, 'and 
-       are to end as leadsoldiers dressed by the right. The multifarious grids used by the scribes were directly translated 
-       into the techniques of metal setting. The scribes had long explored the two-dimensional axes, long before Gutenberg, 
-       long before Descartes described them as constraints.
+
+<!-- here's the section that was cut off half way -->
+
+<section class="main-continued">
+    <p>
+    But the length of line, the width of setting, provided another dimension. It seem that this horizontal dimension (x) of the grid was determined by convention, and embodied in the Procrustean bed of the composing stick - probably at that time,as more lately in the case of 13-pica fixed newspaper sticks, an unadjustable hod into which the standard bricks of characters could be successionally piled.
     </p>
 
     <p>
-       This account restricts itself to those who used the Latin alphabet, who read from left to right; but only so far as 
-       concerns continuous narrative text. Quite early on, even in the days of incunabula, not only letters but other characters, 
-       for example numerals, needed setting - and in the attempt of mathematical conventions to show the sequence of a proof, 
-       equalities and tabulations were aligned, each below its antecedent step: centring a new implicit axis on the page [3].
+    Of course, the fixing of a horizontal dimension or 'measure' demands conventions of variable spacing between words, or of abbreviation of the words themselves <sup>2</sup>, if all the characters align at left, where the line begins, 'and are to end as leadsoldiers dressed by the right. The multifarious grids used by the scribes were directly translated into the techniques of metal setting. The scribes had long explored the two-dimensional axes, long before Gutenberg, long before Descartes described them as constraints.
     </p>
-        
+
     <p>
-        So during centuries: for the first ninety years of typographic printing saw the exploration and development of justified 
-        and unjustified setting, of italic, of new letters (J and U surviving; some, like the omega, left at last), of punctuation marks. 
-        After 1530, though, interest shifted toward experiment in letter design and, later, mechanical improvement.
+    This account restricts itself to those who used the Latin alphabet, who read from left to right; but only so far as concerns continuous narrative text. Quite early on, even in the days of incunabula, not only letters but other characters, for example numerals, needed setting - and in the attempt of mathematical conventions to show the sequence of a proof, equalities and tabulations were aligned, each below its antecedent step: centring a new implicit axis on the page <sup>3</sup>.
+    </p>
+
+    <p>
+    So during centuries: for the first ninety years of typographic printing saw the exploration and development of justified and unjustified setting, of italic, of new letters (J and U surviving; some, like the omega, left at last), of punctuation marks. After <time datetime="1530">1530</time>, though, interest shifted toward experiment in letter design and, later, mechanical improvement.
     </p>
 
     <p> 
-        All later work, until the demands of writers such as Blake or Mallarmé disrupted the conventions, considered the typographic 
-        grid unalterable [4]. And even with the poets, their understanding of typography was such that they hardly considered the
-        presentation of their personal desires a challenge to the grid.
+    All later work, until the demands of writers such as Blake or Mallarmé disrupted the conventions, considered the typographic grid unalterable <sup>4</sup>. And even with the poets, their understanding of typography was such that they hardly considered the presentation of their personal desires a challenge to the grid.
     </p>
 
     <p>
-        And here's a sadness.Typography, as taught in schools of art, and captioned in the illustrated books, is mostly but a word delimiting a 
-        field of art-/craft-history; books of types, of typographic ornaments and rules, of title-pages (fewer books of double-page spreads), 
-        sit on their shelves or presses. Typography (sic) has become the study of placing letters onafield: typography, a more precise form oflettering.
-        And lettering, calligraphy, has died some sweet Roman death or letraset itself below the ground.
+    And here's a sadness.Typography, as taught in schools of art, and captioned in the illustrated books, is mostly but a word delimiting a field of art-/craft-history; books of types, of typographic ornaments and rules, of title-pages (fewer books of double-page spreads), sit on their shelves or presses. Typography (sic) has become the study of placing letters onafield: typography, a more precise form oflettering. And lettering, calligraphy, has died some sweet Roman death or letraset itself below the ground.
     </p>
 
     <p>
-        It is time, after half a millennium,for the re-assessment of typography. In architecture, stones, mud, plants humbled together, were governed; labour
-        was delegated, craftsmen worked their feeling for materials on that material, builders organized, architects, later, chiefed constructions. After the 
-        decline of architecture, all major work nowadays is done by those who dreamed of white cathedrals or had an intimate experience or interest in their material, 
-        old or new.
+    It is time, after half a millennium,for the re-assessment of typography. In architecture, stones, mud, plants humbled together, were governed; labour was delegated, craftsmen worked their feeling for materials on that material, builders organized, architects, later, chiefed constructions. After the decline of architecture, all major work nowadays is done by those who dreamed of white cathedrals or had an intimate experience or interest in their material, old or new.
     </p>
+</section>
 
-    <p>
-        <sub>
-            At this point AF refers to one of the 'visual tables' from Typographic norms (see pp. 71-4 above), part of which he had reproduced on the cover of 
-            that issue of The Designer. His caption ran: 'Cover: thin, mid, thick, en and em spaces for 5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42, 48 and 60 point
-            anglo-american. The spaces printed in grey
-            are interchangeable with 
-        </sub>
-    </p>
+<section class="footnotes-contunued">
+        <p>
+            At this point AF refers to one of the <q>visual tables</q> from Typographic norms (see pp. 71-4 above), part of which he had reproduced on the cover of that issue of The Designer. His caption ran: <q>'Cover: thin, mid, thick, en and em spaces for 5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42, 48 and 60 point anglo-american. The spaces printed in grey are interchangeable with 2-,3- and 4-pica quadrats.' </q>
+        </p>
+</section>
 </article>
 
- <h2>
+<article class="response">
+<h2>
     Response
- </h2>
+</h2>
         <p>
-            Published in 1960s Britain, Froshaugh's Typography is a Grid addresses a system of organization that became the dominant system for organizing typography. 
-            It was heavily accepted as the only way type can be laid out and can be clearly identified in the way in which Froshaugh's own text is arranged.
-            To better understand this text, I researched the historical and cultural context in which Froshaugh lived. At this time, a new generation of modernist designers 
-            was emerging and gaining influence in London's design scene, not to mention the tremendous growth of London's steel industry. This changing environment also led 
-            to a change in how space and subsequently type were perceived. 
+            Grid, are not a series of lines on a page but a system of rules we set for ourselves when designing. Viewing grids through this lens, I realized that the relationship between grids and typography is not fixed, rather they are closely connected. Where type creates expression, the grid brings order, much like language, which utilizes grammar as a structural tool but allows unlimited ways to express ideas. Its visual form, typography, relies on grids as a system of structure to communicate with clarity, providing a set of restrictions for creativity to play into. 
         </p>
         
         <p>
-            Thus, the grid became more than a tool; it symbolized order and modernity. Printing, at that time, 
-            was also designed as an arrangement of individual characters fixed within a metal framework, which meant that a grid was both a product of the tool and a result of it. 
-            The adoption of printing led to a widespread acceptance of the grid as the way type should be arranged.Though the relationship between typography and the grid is not 
-            fixed, they are closely connected. Where type creates expression, the grid brings order, much like language, which utilizes grammar as a structural tool but allows 
-            unlimited ways to express ideas. Its visual form, typography, relies on grids as a system of structure to communicate with clarity, providing a set of restrictions for 
-            creativity to play into. 
+            With systems and rules, comes power structure. Froshaugh connects the relationship between typography and grid to cartography. In cartography, the grid acts as a way to orient the viewer. The grid provides guidance for the reader and suggests a sense of order. These elements shouldn't be seen as completely neutral, they indirectly express values, politics, cultural norms, and power. Froshaugh shares the example of reading from left-to-right reading, a primary western way to read. Today, this applies to how we design interfaces, documents, and websites. This also applies to the power that our phones, and the many grids within it (most notably, the instagram grid) captures and controls our attention.
         </p>
 
         <p>
-            Froshaugh also connects the relationship between typography and grid to cartography. In Cartography, the grid acts as a way to orient the viewer. 
-            The grid provides guidance for the reader and suggests a sense of order. 
-            Although it is interesting to note that these elements shouldn't be seen as completely neutral, they indirectly express values, politics, cultural norms, and power. Froshaugh shares 
-            the example of reading from left-to-right reading - a primary western way to read. Today, this applies to how we design interfaces, documents, and websites.
+            Froshaugh's <cite>Typography is a Grid</cite> addresses a system of organization that, at its time became the dominant system for organizing typography. When it was published in 1960s Britain, It was heavily accepted as the only way type can be laid out and can be clearly identified in the way in which Froshaugh's own text is arranged. At this time, a new generation of modernist designers was emerging and gaining influence in London's design scene, as well as the tremendous growth of London's steel industry. This changing environment also led to a change in how space and subsequently type were perceived. Thus, the grid became more than a tool; it symbolized order and modernity. Printing, was also designed as an arrangement of individual characters fixed within a metal framework, which meant that a grid was both a product of the tool and a result of it. The adoption of printing led to a widespread acceptance of the grid as the way type should be arranged.
         </p>
 
         <p>
-            This reading continues its relevance in digital design, where websites and user interfaces depend on grids and templates. Just as early typographers used grids for printed text, 
-            today's designers use them to arrange content on screens. The grid has become a standard, quietly shaping how we interact with information. Continuing to speak to the singular 
-            identity of the web today, it has become heavily simplified in its conceptual approach. There is a learnt way that we all browse the web, in the same manner that we read from 
-            left to right in the Western world.
+            This reading continues its relevance in digital design, where websites and user interfaces depend on grids and templates. Just as early typographers used grids for printed text, today's designers use them to arrange content on screens. The grid has become a standard, quietly shaping how we interact with information. Continuing to speak to the singular identity of the web today, heavily simplified in its conceptual approach.
         </p>
 
         <p>
-            As someone who heavily uses grids to design, this had me questioning what we lose by relying on them. Grids allow information to become accessible, but they can also reduce creativity 
-            and limit the variety of design concepts someone can create. Froshaug's persuasion to rethink typography, even after hundreds of years, highlights this tension.
-            Therefore, the grid in typography is not a rigid rule but a conceptual one, a system that supports clarity while also inviting reinterpretation. 
-            As designers, it is our role to use these systems knowingly, understanding when to follow and break the rules we set for ourselves. 
-            Typography doesn't need a grid to exist, but the grid continues to shape how we see, understand, and communicate.
+            Grids allow information to become accessible, but they can also reduce creativity and limit the variety of design concepts someone can create. Froshaug's persuasion to rethink typography, even after hundreds of years, highlights this tension. As designers, it is our role to use these systems knowingly, understanding when to follow and break the rules we set for ourselves. Typography doesn't need a grid to exist, but the grid continues to shape how we see, understand, and communicate.
         </p>
+        </article>
         </main>
     </body>
-    </html>
 </html>
