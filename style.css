@@ -1,17 +1,52 @@
 body {
-    font-family: "Oswald", helvetica, arial, sans-serif;
-    color:red;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    color: #352019;
     padding: 3rem;
+    margin: 1rem;
+    background-color: #FEF9F0;
 }
 
 h1 {
-    font-family: 'Times New Roman', serif;
-    color: black;
-    font-size: 4rem;
+    color: #352019;
 }
 
-.subheading {
-    color:orange; 
-    font-size: 2 rem;
+h1.typography {
+    font-family: "helvetica neue";
+    font-size: 4rem;
+    font-weight: 900;
 }
-*:not (:nth-first) { margin-block-start: 1em; }
+/* learnt that comments are different in CSS from MDN */
+/* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
+h1.is-a-grid {
+    font-family: "array";
+    font-size: 8rem;
+    margin-top: -2.5rem;
+    margin-left: 0.6rem;
+}
+section.intro {
+    font-size: 1.5rem;
+    font-weight: 150; 
+}
+p.author-date{
+    margin-bottom: 2rem;
+}
+/* unsure how to make readings and response nav appear on one line in seperate color boxes*/
+nav {
+    font-family: "helvetica neue";
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+aside {
+    font-size: 0.85rem;
+    font-weight: 400; 
+    line-height: 1.1rem;
+/* not sure why :lastchild isn't highlighted but it seems to be working okay*/
+:last-child {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+}
+
+

@@ -5,33 +5,41 @@
 		<link href="style.css" rel="stylesheet">
 		<link href="reset.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="//www.fontshare.com/fonts/array" crossorigin>
+
     </head>
    
     <body>
         <header>
-        <h1> Typography as a Grid </h1>
+        <h1 class="typography"> TYPOGRAPHY </h1> 
+        <h1 class="is-a-grid"> IS A GRID </h1>
         </header>
              <main>
                 <article class="reading">
                     <section class="intro">
-                            <p class="author">Anthony Froshaugh, 
+                            <p class="author-date">Anthony Froshaugh, 
 <!-- I also leant about the time element on mdn and from the example! -->
 <!-- also not sure about the punctuation/spacing and if it falls after the code elements and the cite element in general -->
                             <time datetime="1967">1967</time>
                             </p>
-                    <aside>
-                        <p>
-                            <cite>Typography is a grid</cite> published <time datetime="1967"> 1967 </time>, in: <cite>The Designer</cite> [bibl. 122]. The article was written at the height of the vogue for grid-based graphic design, imported into Britain from (especially) Switzerland. In an earlier contribution to <cite>The Designer</cite>, Brian Grimbly-a friend and colleague of AF -had discussed grids in a purely pragmatic way, as a tool for designers. <cite>'Designing to a grid', The Designer, no. 162,</cite> <time datetime="1966-08"> August 1966 </time>, pp. 4-5. AF then wrote this <q>call to order</q>, restating central tenets of his approach to typography. Some slight editorial changes have been made in reprinting the article here. Notes to the text and illustrations were originally numbered in one sequence, but have here been renumbered in two sequences. 
-                        </p>
-                        <p>
-                            As explained in the editorial note on p. 189 below, the cover image of that issue of <cite>The Designer</cite> constituted one of the illustrations. It has been omitted here: reproduced small it would have little meaning, and similar images can be seen in the reproductions from Typographic norms on pp. 71-4 above.<cite>Typography is a grid</cite> was reprinted in <cite>Design Dialogue, no.1</cite>,<time datetime="1969"> 1969 </time>: a magazine edited by students at Stafford College of Art and Design. A F's work was important for the design course at Stafford, as Peter Burnhill implied in his retrospective: <cite>Outside the whale</cite>, <cite>Information Design Journal</cite>, vol.8, no. 3, <time datetime="1966">1996</time>, pp. 195-218.
-                    </p>
+<!-- trying to add nav elements but struggling to figure out how to actually link them -->
+<nav>  
+    <ul class="insert">
+    <li><a href="#reading">Reading</a></li>
+    <li><a href="#response">Response</a></li>
+  </ul>
+</nav>
+         <aside>
+         <p>
+             <cite>Typography is a grid</cite> published <time datetime="1967"> 1967 </time>, in: <cite>The Designer</cite> [bibl. 122]. The article was written at the height of the vogue for grid-based graphic design, imported into Britain from (especially) Switzerland. In an earlier contribution to <cite>The Designer</cite>, Brian Grimbly-a friend and colleague of AF -had discussed grids in a purely pragmatic way, as a tool for designers. <cite>'Designing to a grid', The Designer, no. 162,</cite> <time datetime="1966-08"> August 1966 </time>, pp. 4-5. AF then wrote this <q>call to order</q>, restating central tenets of his approach to typography. Some slight editorial changes have been made in reprinting the article here. Notes to the text and illustrations were originally numbered in one sequence, but have here been renumbered in two sequences. 
+         </p>
+         <p>
+            As explained in the editorial note on p. 189 below, the cover image of that issue of <cite>The Designer</cite> constituted one of the illustrations. It has been omitted here: reproduced small it would have little meaning, and similar images can be seen in the reproductions from Typographic norms on pp. 71-4 above.<cite>Typography is a grid</cite> was reprinted in <cite>Design Dialogue, no.1</cite>,<time datetime="1969"> 1969 </time>: a magazine edited by students at Stafford College of Art and Design. A F's work was important for the design course at Stafford, as Peter Burnhill implied in his retrospective: <cite>Outside the whale</cite>, <cite>Information Design Journal</cite>, vol.8, no. 3, <time datetime="1966">1996</time>, pp. 195-218.
+        </p>
                 </aside> 
             </section>
 
-<section class="main">
+<section class="body">
     <blockquote>
         Grid structures are implicit in the word typography. After half a millennium it is time for an understanding and re-assessment.
     </blockquote>
@@ -59,7 +67,7 @@
                 </p>
 </section>
 
-<section class="figure-1">
+<section class="figures">
     <!-- For this next part, might try CSS styling to create text on path and pair with a type writer looking font -->
     <!-- Not sure if this is correct for german/latin/french languages -->
     <!-- Mdn told me to put figcaption inside figure, I'm going to go with that... -->
@@ -81,10 +89,8 @@
                     <sup>1</sup> Illegibility resulting from the mixture of types of differing body sizes (the 'a' and 'e are 13 thou larger than the other letters). <cite>H. Meisner and J. Luther, Die Erfindung der Buchdruckerkunst, Bielefeld & Ieipzig: Velhagen & Klasing</cite>, <time datetime="1900">1900</time>.
         </figcaption>
     </figure>  
-</section>
 
     <!-- some of my latin letters are being highlighted here, not sure what that means...-->   
-<section class="figure-2">
     <figure lang="la">
         <blockquote>
                 Edilcipline rorupilttia Lura
@@ -107,9 +113,7 @@
                     <sup>2</sup> Word and syllable abbreviations in <cite>Gutenberg's 36-line Bible</cite>.Note that the hyphens override the measure.
         </figcaption>
     </figure>    
-</section>
 
-<section class="figure-3">
     <figure lang="la"> 
         <blockquote>
                 S CYTHIA intra Imau 
@@ -136,7 +140,6 @@
             <sup>3</sup> Ptolemy, <cite> Cosmographia, Ulm, </cite> <time datetime="1428">1482.</time> Note the comparatively small size of the numerator in fractions; compare Stock Exchange fractions in financial columns for one ofthe alternative solutions.
         </figcaption>
     </figure>    
-</section>
 
 <!-- choosing not to include this one because it doesn't add much interms of the explaining the content, also looks image like. Left it here in case I change my mind.
 c'etait issu stellaire le nombre EXISTAT-IL autrement qu'hallucination eparse d'agonie COMMENCAT-IL ET CESSAT-IL sourdant que nie et clos quand apparu par quelque profusion repandue en rarete SE CHIFFRAT-IL evidence de la somme pour peu qu'une ILLUMINAT-IL ce serait pire non davantage ni moins mais autant indifferemnent LE HASARD
@@ -145,7 +148,7 @@ c'etait issu stellaire le nombre EXISTAT-IL autrement qu'hallucination eparse d'
 
 <!-- here's the section that was cut off half way -->
 
-<section class="main-continued">
+<section class="body-continued">
     <p>
     But the length of line, the width of setting, provided another dimension. It seem that this horizontal dimension (x) of the grid was determined by convention, and embodied in the Procrustean bed of the composing stick - probably at that time,as more lately in the case of 13-pica fixed newspaper sticks, an unadjustable hod into which the standard bricks of characters could be successionally piled.
     </p>
@@ -188,7 +191,7 @@ c'etait issu stellaire le nombre EXISTAT-IL autrement qu'hallucination eparse d'
 </h2>
 <!-- reworked parts of my response in terms of the text - refer to the latest figma for accurate version if needed -->
         <p>
-            Grid, are not a series of lines on a page but a system of rules we set for ourselves when designing. Viewing grids through this lens, I realized that the relationship between grids and typography is not fixed, rather they are closely connected. Where type creates expression, the grid brings order, much like language, which utilizes grammar as a structural tool but allows unlimited ways to express ideas. Its visual form, typography, relies on grids as a system of structure to communicate with clarity, providing a set of restrictions for creativity to play into. 
+            Grids are not a series of lines on a page but a system of rules we set for ourselves when designing. Viewing grids through this lens, I realized that the relationship between grids and typography is not fixed, rather they are closely connected. Where type creates expression, the grid brings order, much like language, which utilizes grammar as a structural tool but allows unlimited ways to express ideas. Its visual form, typography, relies on grids as a system of structure to communicate with clarity, providing a set of restrictions for creativity to play into. 
         </p>
         
         <p>
