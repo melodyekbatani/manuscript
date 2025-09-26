@@ -14,6 +14,7 @@ h1.typography {
     font-family: "helvetica neue";
     font-size: 4rem;
     font-weight: 900;
+    margin-left: -0.7rem;
 }
 /* learnt that comments are different in CSS from MDN */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
@@ -21,11 +22,10 @@ h1.is-a-grid {
     font-family: "array";
     font-size: 8rem;
     margin-top: -2.5rem;
-    margin-left: 0.6rem;
 }
 section.intro {
-    font-size: 1.5rem;
-    font-weight: 150; 
+    font-size: 1.4rem;
+    font-weight: 300; 
 }
 p.author-date{
     margin-bottom: 2rem;
@@ -42,11 +42,87 @@ aside {
     font-size: 0.85rem;
     font-weight: 400; 
     line-height: 1.1rem;
+    margin-top: 1rem;
 /* not sure why :lastchild isn't highlighted but it seems to be working okay*/
 :last-child {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
+cite {
+    font-style: italic;
+}
+time {
+    font-style: italic;
+}
+}
+section.reading {
+    font-size: 1rem;  
+    margin-top: 1rem;
+
+blockquote:first-child {
+    font-size: 1.5rem;   
+    font-weight: 600;       
+    margin-bottom: 2rem;
+  }
+blockquote::first-line {
+    font-size: 2.06rem;       
+  }
+}
+p {
+    margin-top: 1.5rem
+}
+sup {
+    font-size: 0.7rem;
+    vertical-align: super;
+    line-height: 0;
+}
+section.footnotes {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+section.figures blockquote.quote-one
+{
+    font-family: "IM Fell English", serif;
+    font-weight: 100;
+    font-size: 1.3rem;  
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+figcaption {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.figures blockquote.quote-two
+{
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-size: 2rem;  
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+section.figures blockquote.quote-three
+{
+    font-family: "ltc-goudy-text-pro-shaded", serif;
+    font-weight: 100;
+    font-size: 2rem;  
+    line-height: 1;
+    color: #352019
+}
+section.figures blockquote.quote-three::first-letter
+{
+    font-family: "ltc-goudy-text-pro-shaded", serif;
+    font-weight: 500;
+    font-size: 7rem;  
+    line-height: 1;
+    color: #352019
+}
+section.footnotes-continued {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+q {
+    font-style: italic;
 }
 
 
