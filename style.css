@@ -16,9 +16,9 @@ h1.typography {
     font-weight: 900;
     margin-left: -0.7rem;
 }
-/* learnt that comments are different in CSS from MDN */
+/* comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
-h1.is-a-grid {
+h2.is-a-grid {
     font-family: "array";
     font-size: 8rem;
     margin-top: -2.5rem;
@@ -41,9 +41,9 @@ nav {
 aside {
     font-size: 0.85rem;
     font-weight: 400; 
-    line-height: 1.1rem;
     margin-top: 1rem;
-/* not sure why :lastchild isn't highlighted but it seems to be working okay*/
+
+/* not sure why :lastchild isn't highlighted orange in the code but it seems to be working okay*/
 :last-child {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -61,7 +61,7 @@ section.reading {
 
 blockquote:first-child {
     font-size: 1.5rem;   
-    font-weight: 600;       
+    font-weight: 500;       
     margin-bottom: 2rem;
   }
 blockquote::first-line {
@@ -124,5 +124,49 @@ section.footnotes-continued {
 q {
     font-style: italic;
 }
+/* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
+div.container {
+        background-color: #352019;
+        width: 100%;
+}
+article.response {
+    color: #fdf0d9;
+    padding: 3rem;
+}
+h3.typography {
+    font-family: "helvetica neue";
+    font-size: 4rem;
+    font-weight: 900;
+    margin-left: -0.7rem;
+}
 
+h4.grid {
+    font-family: "helvetica";
+    font-size: 3.7rem;
+    font-weight: 900;
+    margin-top: -0.75rem;
+}
+h5.rules {
+    font-family: "helvetica";
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #88B0FF;
+    margin-top: 0rem;
 
+}
+p {
+    line-height: 1.5rem;
+}
+
+cite {
+    font-style: italic;
+}
+
+blockquote.emphasis {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;   
+    font-weight: 500; 
+}
+span {
+    color: #88B0FF;
+}
