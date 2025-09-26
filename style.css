@@ -1,172 +1,173 @@
 body {
-    font-family: "helvetica neue", helvetica, arial, sans-serif;
-    color: #352019;
-    padding: 3rem;
-    margin: 1rem;
-    background-color: #FEF9F0;
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+	color: #352019;
+	padding: 3rem;
+	margin: 1rem;
+	background-color: #FEF9F0;
 }
 
 h1 {
-    color: #352019;
+	color: #352019;
 }
 
 h1.typography {
-    font-family: "helvetica neue";
-    font-size: 4rem;
-    font-weight: 900;
-    margin-left: -0.7rem;
+	font-family: "helvetica neue";
+	font-size: 4rem;
+	font-weight: 900;
+	margin-left: -0.7rem;
 }
 /* comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
 h2.is-a-grid {
-    font-family: "array";
-    font-size: 8rem;
-    margin-top: -2.5rem;
+	font-family: "array";
+	font-size: 8rem;
+	margin-top: -2.5rem;
 }
 section.intro {
-    font-size: 1.4rem;
-    font-weight: 300; 
+	font-size: 1.4rem;
+	font-weight: 300; 
 }
 p.author-date{
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 /* unsure how to make readings and response nav appear on one line in seperate color boxes*/
 nav {
-    font-family: "helvetica neue";
-    font-size: 1rem;
-    font-weight: 700;
+	font-family: "helvetica neue";
+	font-size: 1rem;
+	font-weight: 700;
 }
 
 
 aside {
-    font-size: 0.85rem;
-    font-weight: 400; 
-    margin-top: 1rem;
+	font-size: 0.85rem;
+	font-weight: 400; 
+	margin-top: 1rem;
 
 /* not sure why :lastchild isn't highlighted orange in the code but it seems to be working okay*/
 :last-child {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
 }
 cite {
-    font-style: italic;
+	font-style: italic;
 }
 time {
-    font-style: italic;
+	font-style: italic;
 }
 }
 section.reading {
-    font-size: 1rem;  
-    margin-top: 1rem;
+	font-size: 1rem;  
+	margin-top: 1rem;
 
 blockquote:first-child {
-    font-size: 1.5rem;   
-    font-weight: 500;       
-    margin-bottom: 2rem;
+	font-size: 1.5rem;   
+	font-weight: 500;       
+	margin-bottom: 2rem;
   }
 blockquote::first-line {
-    font-size: 2.06rem;       
+	font-size: 2.06rem;       
   }
 }
 p {
-    margin-top: 1.5rem
+	margin-top: 1.5rem
 }
 sup {
-    font-size: 0.7rem;
-    vertical-align: super;
-    line-height: 0;
+	font-size: 0.7rem;
+	vertical-align: super;
+	line-height: 0;
 }
 section.footnotes {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
 }
 section.figures blockquote.quote-one
 {
-    font-family: "IM Fell English", serif;
-    font-weight: 100;
-    font-size: 1.3rem;  
-    letter-spacing: 0.2rem;
-    margin-bottom: 1.5rem;
+	font-family: "IM Fell English", serif;
+	font-weight: 100;
+	font-size: 1.3rem;  
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
 }
 figcaption {
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 section.figures blockquote.quote-two
 {
-    font-family: "UnifrakturMaguntia", cursive;
-    font-weight: 400;
-    font-size: 2rem;  
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
+	font-family: "UnifrakturMaguntia", cursive;
+	font-weight: 400;
+	font-size: 2rem;  
+	line-height: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 section.figures blockquote.quote-three
 {
-    font-family: "ltc-goudy-text-pro-shaded", serif;
-    font-weight: 100;
-    font-size: 2rem;  
-    line-height: 1;
-    color: #352019
+	font-family: "ltc-goudy-text-pro-shaded", serif;
+	font-weight: 100;
+	font-size: 2rem;  
+	line-height: 1;
+	color: #352019
 }
 section.figures blockquote.quote-three::first-letter
 {
-    font-family: "ltc-goudy-text-pro-shaded", serif;
-    font-weight: 500;
-    font-size: 7rem;  
-    line-height: 1;
-    color: #352019
+	font-family: "ltc-goudy-text-pro-shaded", serif;
+	font-weight: 500;
+	font-size: 7rem;  
+	line-height: 1;
+	color: #352019
 }
 section.footnotes-continued {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
 }
 q {
-    font-style: italic;
+	font-style: italic;
 }
 /* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
 div.container {
-        background-color: #2e1c16;
-        width: 100%;
+		background-color: #2e1c16;
+		width: 100%;
 }
 article.response {
-    color: #fdf0d9;
-    padding: 3rem;
+	color: #fdf0d9;
+	padding: 3rem;
 }
 h3.typography {
-    font-family: "helvetica neue";
-    font-size: 4rem;
-    font-weight: 900;
-    margin-left: -0.7rem;
+	font-family: "helvetica neue";
+	font-size: 4rem;
+	font-weight: 900;
+	margin-left: -0.7rem;
 }
 
 h4.grid {
-    font-family: "helvetica";
-    font-size: 3.7rem;
-    font-weight: 900;
-    margin-top: -0.75rem;
+	font-family: "helvetica";
+	font-size: 3.7rem;
+	font-weight: 900;
+	margin-top: -0.75rem;
 }
 h5.rules {
-    font-family: "helvetica";
-    font-size: 1.7rem;
-    font-weight: 900;
-    color: #88B0FF;
-    margin-top: 0rem;
+	font-family: "helvetica";
+	font-size: 1.7rem;
+	font-weight: 900;
+	color: #88B0FF;
+	margin-top: 0rem;
 
 }
+
 p {
-    line-height: 1.5rem;
+	line-height: 1.5rem;
 }
 
 cite {
-    font-style: italic;
+	font-style: italic;
 }
 
 blockquote.emphasis {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;   
-    font-weight: 500; 
+	margin-top: 1.5rem;
+	font-size: 1.5rem;   
+	font-weight: 500; 
 }
 span {
-    color: #88B0FF;
+	color: #88B0FF;
 }
