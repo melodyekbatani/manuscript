@@ -176,7 +176,7 @@ blockquote.emphasis {
 	font-weight: 500; 
 }
 /* MDN nth-last-child() Pseudo-class */
-/* span.nth-last-child(2){
+blockquote.emphasis.span{
 	color: #88B0FF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
