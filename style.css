@@ -5,22 +5,29 @@ body {
 	margin: 1rem;
 	background-color: #FEF9F0;
 }
-
 h1 {
 	color: #352019;
-}
-
-h1.typography {
 	font-family: "helvetica neue";
 	font-size: 4rem;
 	font-weight: 900;
 	margin-left: -0.7rem;
 }
+section p {
+}
+section.intro {
+	color: wheat;
+	p {
+		color: black;	
+	}
+}
+
 /* comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
-h2.is-a-grid {
+
+span:first-child {
 	font-family: "array";
 	font-size: 8rem;
+	font-weight: 400;
 	margin-top: -2.5rem;
 }
 section.intro {
@@ -168,6 +175,9 @@ blockquote.emphasis {
 	font-size: 1.5rem;   
 	font-weight: 500; 
 }
-span {
+/* MDN nth-last-child() Pseudo-class */
+/* span.nth-last-child(2){
 	color: #88B0FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
 }
