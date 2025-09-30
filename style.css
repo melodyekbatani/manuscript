@@ -8,13 +8,28 @@ body {
 	margin: 1rem;
 	background-color: #FEF9F0;
 }
-h1 {
-	color: #352019;
-	font-family: "helvetica neue";
-	font-size: 4rem;
-	font-weight: 900;
-	margin-left: -0.7rem;
+h1 
+{
+	span {
+	display:block;
+	/* This SAVED me! */
+	}
+		span:nth-child(1) {  
+			color: blue; 
+			font-family: "helvetica neue";
+			font-size: 4rem;
+			font-weight: 900;
+			margin-left: -0.7rem;
+		}
+		span:nth-child(2) { 
+			color: blue;  
+			font-family: "array";
+			font-size: 8rem;
+			font-weight: 400;
+			margin-top: -2.3rem;
+		}
 }
+
 section.intro {
 	color: wheat;
 	p {
@@ -23,12 +38,7 @@ section.intro {
 }
 /* This is how comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
-span.title {
-	font-family: "array";
-	font-size: 8rem;
-	font-weight: 400;
-	margin-top: -2.5rem;
-}
+
 section.intro {
 	font-size: 1.4rem;
 	font-weight: 300; 
@@ -58,7 +68,7 @@ margin-top: 1rem;
 	font-style: italic;
 	}
 }
-section.reading {
+#reading {
 font-size: 1rem;  
 margin-top: 1rem;
 
@@ -128,34 +138,37 @@ q {
 	font-style: italic;
 }
 /* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
-div.container {
-		background-color: #2e1c16;
-		width: 100%;
-}
-article.response {
+#response {
+	background-color: #2e1c16;
+	width: 100%;
 	color: #fdf0d9;
 	padding: 3rem;
 }
-h1.span.typography {
-	font-family: "helvetica neue";
-	font-size: 4rem;
-	font-weight: 900;
-	margin-left: -0.7rem;
+h2{
+	span {
+	display:block;
+	}
+		span:nth-child(1) {
+			font-family: "helvetica neue";
+			font-size: 4rem;
+			font-weight: 900;
+			margin-left: -0.7rem;
 }
-h1.span.grid {
-	font-family: "helvetica";
-	font-size: 3.7rem;
-	font-weight: 900;
-	margin-top: -0.75rem;
+		span:nth-child(2) {
+		font-family: "helvetica";
+		font-size: 3.7rem;
+		font-weight: 900;
+		margin-top: -0.75rem;
 }
-h1.span.rules {
-	font-family: "helvetica";
-	font-size: 1.7rem;
-	font-weight: 900;
-	color: #88B0FF;
-	margin-top: 0rem;
+		span:nth-child(3) {
+		font-family: "helvetica";
+		font-size: 1.7rem;
+		font-weight: 900;
+		color: #88B0FF;
+		margin-top: 0rem;
 }
-p {
+}
+p { 
 	line-height: 1.5rem;
 }
 cite {
