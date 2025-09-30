@@ -24,7 +24,7 @@ section.intro {
 /* comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
 
-span:first-child {
+span.title {
 	font-family: "array";
 	font-size: 8rem;
 	font-weight: 400;
@@ -42,38 +42,35 @@ nav {
 	font-family: "helvetica neue";
 	font-size: 1rem;
 	font-weight: 700;
-}
-
-
+	}
 aside {
-	font-size: 0.85rem;
-	font-weight: 400; 
-	margin-top: 1rem;
-
-/* not sure why :lastchild isn't highlighted orange in the code but it seems to be working okay*/
-:last-child {
+font-size: 0.85rem;
+font-weight: 400; 
+margin-top: 1rem;
+	/* not sure why :lastchild isn't highlighted orange in the code but it seems to be working okay*/
+	:last-child {
 	margin-top: 1.5rem;
 	margin-bottom: 2rem;
-}
-cite {
+	}
+	cite {
 	font-style: italic;
-}
-time {
+	}
+	time {
 	font-style: italic;
-}
+	}
 }
 section.reading {
-	font-size: 1rem;  
-	margin-top: 1rem;
+font-size: 1rem;  
+margin-top: 1rem;
 
-blockquote:first-child {
+	blockquote:first-child {
 	font-size: 1.5rem;   
 	font-weight: 500;       
 	margin-bottom: 2rem;
-  }
+	}
 blockquote::first-line {
 	font-size: 2.06rem;       
-  }
+}
 }
 p {
 	margin-top: 1.5rem
