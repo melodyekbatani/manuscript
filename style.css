@@ -1,3 +1,6 @@
+:root {
+	font-size: 150%;
+}
 body {
 	font-family: "helvetica neue", helvetica, arial, sans-serif;
 	color: #352019;
@@ -12,18 +15,14 @@ h1 {
 	font-weight: 900;
 	margin-left: -0.7rem;
 }
-section p {
-}
 section.intro {
 	color: wheat;
 	p {
 		color: black;	
 	}
 }
-
-/* comments are different in CSS */
+/* This is how comments are different in CSS */
 /* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
-
 span.title {
 	font-family: "array";
 	font-size: 8rem;
@@ -143,7 +142,6 @@ h3.typography {
 	font-weight: 900;
 	margin-left: -0.7rem;
 }
-
 h4.grid {
 	font-family: "helvetica";
 	font-size: 3.7rem;
@@ -156,24 +154,21 @@ h5.rules {
 	font-weight: 900;
 	color: #88B0FF;
 	margin-top: 0rem;
-
 }
-
 p {
 	line-height: 1.5rem;
 }
-
 cite {
 	font-style: italic;
 }
-
 blockquote.emphasis {
 	margin-top: 1.5rem;
 	font-size: 1.5rem;   
 	font-weight: 500; 
 }
 /* MDN nth-last-child() Pseudo-class */
-blockquote.emphasis.span{
+blockquote.emphasis.span 
+{
 	color: #88B0FF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
