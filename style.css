@@ -136,19 +136,19 @@ article.response {
 	color: #fdf0d9;
 	padding: 3rem;
 }
-h3.typography {
+h1.span.typography {
 	font-family: "helvetica neue";
 	font-size: 4rem;
 	font-weight: 900;
 	margin-left: -0.7rem;
 }
-h4.grid {
+h1.span.grid {
 	font-family: "helvetica";
 	font-size: 3.7rem;
 	font-weight: 900;
 	margin-top: -0.75rem;
 }
-h5.rules {
+h1.span.rules {
 	font-family: "helvetica";
 	font-size: 1.7rem;
 	font-weight: 900;
