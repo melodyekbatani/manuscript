@@ -39,7 +39,7 @@ section.intro {
 		font-size: 2rem;
 		font-weight: 500;
 		padding-inline-start: 3.5rem;
-		margin-block-start: -1rem;
+		margin-block-start: 1rem;
 		color: magenta;
 	}
 }
@@ -47,21 +47,22 @@ section.intro {
 /* I need help getting this to jump to the right section*/
 nav {
 	margin-block-start: 3rem;
+	margin-block-end: 7rem;
 
 	li {
 		font-family: "array";
-		padding-block-start: 3rem;
+		padding-block-start: 2rem;
 		margin-inline-start: 3.5rem;
 		font-size: 1.5rem;
 		color: white;
 		background-color: black;
 		border-radius: 10px;
-		padding:0.75rem;
+		padding:0.5rem;
 		font-weight: 400;
 		display: inline-block;
 
 		:hover  {
-				color: #01AFFF;
+				color: yellow;
 			}
 	}
 }
@@ -71,14 +72,14 @@ section.byline {
 		font-size: 0.8rem;
 		font-weight: 400;
 		color: black;
-		margin-top: 1rem;
-		padding: 5.6rem;
-		line-height:1rem;
-		max-inline-size: 50rem;
+		margin-block-start: 1rem;
+		padding: 3.5rem;
+		line-height:5rem;
+		max-inline-size: 40rem;
 
 		:last-child {
 			margin-top: 1.5rem;
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 		}
 		
 		cite {
@@ -91,27 +92,42 @@ section.byline {
 	}
 }
 
-#reading {
+#reading .body {
 	font-size: 1.5rem;  
-	margin-top: 1rem;
-	line-height: 1.5rem;
 
     blockquote:nth-child(1) {
 		display: block;
-		font-size: 1.5rem;   
 		font-weight: 500;       
-		margin-bottom: 12rem;
-		color: rgb(30, 0, 255);
-		padding-inline-start: 5.6rem;
+		margin-block-end: 5rem;
+		color: yellow;
+		background-color: black;
+		padding-block-start: 8rem;
+		padding-block-end: 4rem;
+		/* padding-inline-start: 5.6rem; */
     }
 
-    blockquote::first-line {
-        font-size: 3rem;    
-        color: #31BEFF; 
-        padding-block-end: 10rem;
-        max-inline-size: 50rem; 
-        padding-inline-start: 5.6rem;
+    blockquote div:first-child {
+		font-family: "inter";
+        font-size: 2.95rem;    
+        color: yellow; 
+        margin-block-end: 1rem;
+		margin-inline-start: 7rem;
     }
+
+	blockquote div:nth-child(2) {
+		font-family:"Aldrich", sans-serif;
+		font-size: 7rem;	
+		margin-inline-start: 7rem;
+	}
+
+	blockquote div:last-child {
+		font-family: "times new roman";
+		font-style: italic;
+		font-size: 1rem;
+		max-inline-size: 50rem; 
+		margin-block-start: 12rem;
+		margin-inline-start: 18rem;
+	}
 }
 
 p {
