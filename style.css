@@ -1,228 +1,222 @@
 :root {
 	font-size:150%;
 }
+
 p {
 	color:black;
 	font-family: "inter";
-	size: 1.2rem;
+	size: 1.5rem;
+	line-height: 1.2rem;
 }
 
+h1 {
+    span {
+    	display:block;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-:root {
-	font-size: 150%;
-}
-body {
-	font-family: "helvetica neue", helvetica, arial, sans-serif;
-	color: black;
-	background-color: white;
-}
-h1 
-{
-	span {
-	display:block;
-	/* This SAVED me! */
+	span:nth-child(1) {  
+		padding-block-start: 3rem;
+		padding-inline-start: 3rem;
+		color: #01AFFF; 
+		font-family: "inter";
+		font-size: 5.2rem;
+		font-weight: 700;
+		margin-block-start: -0.7rem;
 	}
-		span:nth-child(1) {  
-			padding-block-start: 2rem;
-			padding-inline-start: 2rem;
-			color: #01AFFF; 
-			font-family: "helvetica neue";
-			font-size: 5rem;
-			font-weight: 900;
-			margin-block-start: -0.7rem;
-		}
-		span:nth-child(2) { 
-			padding-inline-start: 2.5rem;
-			color: #01AFFF;  
-			font-family: "array";
-			font-size: 10rem;
-			font-weight: 400;
-			margin-top: -2.5rem;
-		}
+
+	span:nth-child(2) { 
+		padding-inline-start: 4rem;
+		color: #01AFFF;  
+		font-family: "array";
+		font-size: 10rem;
+		font-weight: 400;
+		margin-top: -2.5rem;
+	}
 }
 
 section.intro {
-	p.author-date{
-	font-size: 2rem;
-	font-weight: 400;
-	padding-inline-start: 2rem;
-	margin-block-start: -1rem;
-	color: #8ACD00;
+    p.author-date {
+		font-size: 2rem;
+		font-weight: 500;
+		padding-inline-start: 3.5rem;
+		margin-block-start: -1rem;
+		color: magenta;
+	}
 }
+
 /* I need help getting this to jump to the right section*/
-nav li{
-	font-family: "array";
-	padding-block-start: 2rem;
-	margin: 2rem;
-	font-size: 1.5rem;
-	color: white;
-	background-color: #8ACD00;
-	padding:1rem;
-	font-weight: 400;
-    display: inline-block;
-	position: -webkit-sticky; 
-    }
+nav {
+	margin-block-start: 3rem;
+
+	li {
+		font-family: "array";
+		padding-block-start: 3rem;
+		margin-inline-start: 3.5rem;
+		font-size: 1.5rem;
+		color: white;
+		background-color: black;
+		border-radius: 10px;
+		padding:0.75rem;
+		font-weight: 400;
+		display: inline-block;
+
+		:hover  {
+				color: #01AFFF;
+			}
+	}
 }
 
 section.byline {
-aside {
-font-size: 0.8rem;
-font-weight: 400;
-color: black;
-margin-top: 1rem;
-padding: 5.6rem;
-line-height:1rem;
-max-inline-size: 50rem;
-	:last-child {
-	margin-top: 1.5rem;
-	margin-bottom: 2rem;
+	aside {
+		font-size: 0.8rem;
+		font-weight: 400;
+		color: black;
+		margin-top: 1rem;
+		padding: 5.6rem;
+		line-height:1rem;
+		max-inline-size: 50rem;
+
+		:last-child {
+			margin-top: 1.5rem;
+			margin-bottom: 2rem;
+		}
+		
+		cite {
+			font-style: italic;
+		}
+
+		time {
+			font-style: italic;
+		}
 	}
-	cite {
-	font-style: italic;
-	}
-	time {
-	font-style: italic;
-	}
-}
 }
 
 #reading {
-font-size: 1.5rem;  
-margin-top: 1rem;
-line-height: 1.5rem;
-
-	blockquote:nth-child(1) {
-	display:block;
-	font-size: 1.5rem;   
-	font-weight: 500;       
-	margin-bottom: 12rem;
-	color: rgb(30, 0, 255);
-	padding-inline-start: 5.6rem;
-	}
-		blockquote::first-line {
-		font-size: 3rem;    
-		color: #31BEFF;	
-		padding-block-end: 10rem;
-		max-inline-size: 50rem; 
-		padding-inline-start: 5.6rem;
-	}
-}
-p {
-	margin-top: 1.5rem
-}
-sup {
-	font-size: 0.7rem;
-	vertical-align: super;
-	line-height: 1;
-}
-section.footnotes {
-	font-size: 0.8rem;
-	margin-bottom: 1rem;
-}
-section.figures blockquote.quote-one
-{
-	color:#2e1c16;
-	font-family: "IM Fell English", serif;
-	font-weight: 100;
-	font-size: 1.3rem;  
-	letter-spacing: 0.2rem;
-	margin-bottom: 1.5rem;
-}
-figcaption {
-	font-size: 0.8rem;
+	font-size: 1.5rem;  
 	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-section.figures blockquote.quote-two
-{
-	font-family: "UnifrakturMaguntia", cursive;
-	font-weight: 400;
-	font-size: 2rem;  
 	line-height: 1.5rem;
-	margin-bottom: 1.5rem;
+
+    blockquote:nth-child(1) {
+		display: block;
+		font-size: 1.5rem;   
+		font-weight: 500;       
+		margin-bottom: 12rem;
+		color: rgb(30, 0, 255);
+		padding-inline-start: 5.6rem;
+    }
+
+    blockquote::first-line {
+        font-size: 3rem;    
+        color: #31BEFF; 
+        padding-block-end: 10rem;
+        max-inline-size: 50rem; 
+        padding-inline-start: 5.6rem;
+    }
 }
-section.figures blockquote.quote-three
-{
-	font-family: "ltc-goudy-text-pro-shaded", serif;
-	font-weight: 100;
-	font-size: 2rem;  
-	line-height: 1;
-	color: #352019
+
+p {
+    margin-top: 1.5rem
 }
-section.figures blockquote.quote-three::first-letter
-{
-	font-family: "ltc-goudy-text-pro-shaded", serif;
-	font-weight: 500;
-	font-size: 7rem;  
-	line-height: 1;
-	color: #352019
+
+sup {
+    font-size: 0.7rem;
+    vertical-align: super;
+    line-height: 1;
 }
+
+section.footnotes {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+section.figures blockquote.quote-one {
+    color:#2e1c16;
+    font-family: "IM Fell English", serif;
+    font-weight: 100;
+    font-size: 1.3rem;  
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.figures blockquote.quote-two {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-size: 2rem;  
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section.figures blockquote.quote-three {
+    font-family: "ltc-goudy-text-pro-shaded", serif;
+    font-weight: 100;
+    font-size: 2rem;  
+    line-height: 1;
+    color: #352019
+}
+
+section.figures blockquote.quote-three::first-letter {
+    font-family: "ltc-goudy-text-pro-shaded", serif;
+    font-weight: 500;
+    font-size: 7rem;  
+    line-height: 1;
+    color: #352019
+}
+
 section.footnotes-continued {
-	font-size: 0.8rem;
-	margin-bottom: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
 }
+
 q {
-	font-style: italic;
+    font-style: italic;
 }
+
 /* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
 #response {
-	background-color: #2e1c16;
-	width: 100%;
-	color: #fdf0d9;
-	padding: 3rem;
+    background-color: #2e1c16;
+    width: 100%;
+    color: #fdf0d9;
+    padding: 3rem;
 }
-h2{
-	span {
-	display:block;
+
+h2 {
+    span {
+	    display:b lock;
+    }
+
+	span:nth-child(1) {
+		font-family: "helvetica neue";
+		font-size: 4rem;
+		font-weight: 900;
+		margin-left: -0.7rem;
 	}
-		span:nth-child(1) {
-			font-family: "helvetica neue";
-			font-size: 4rem;
-			font-weight: 900;
-			margin-left: -0.7rem;
-		}
-		span:nth-child(2) {
+
+	span:nth-child(2) {
 		font-family: "helvetica";
 		font-size: 3.7rem;
 		font-weight: 900;
 		margin-top: -0.75rem;
-		}
-		span:nth-child(3) {
+	}
+
+	span:nth-child(3) {
 		font-family: "helvetica";
 		font-size: 1.7rem;
 		font-weight: 900;
 		color: #88B0FF;
 		margin-top: 0rem;
-		}
 	}
-cite {
-	font-style: italic;
 }
+
+cite {
+    font-style: italic;
+}
+
 blockquote {
-	padding-top: 2rem;
-	
-	em {
-	margin-top: 3.5rem;
-	font-size: 1.5rem;   
-	font-weight: 500; 
-	}
-/* MDN nth-last-child() Pseudo-class */
-	span 
-	{
-	color: #88B0FF;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 550;
-	}
+    padding-top: 2rem;    
 }
