@@ -1,12 +1,32 @@
 :root {
+	font-size:150%;
+}
+p {
+	color:black;
+	font-family: "inter";
+	size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
 	font-size: 150%;
 }
 body {
 	font-family: "helvetica neue", helvetica, arial, sans-serif;
-	color: #352019;
-	padding: 3rem;
-	margin: 1rem;
-	background-color: #FEF9F0;
+	color: black;
+	background-color: white;
 }
 h1 
 {
@@ -15,48 +35,56 @@ h1
 	/* This SAVED me! */
 	}
 		span:nth-child(1) {  
-			color: blue; 
+			padding-block-start: 2rem;
+			padding-inline-start: 2rem;
+			color: #01AFFF; 
 			font-family: "helvetica neue";
-			font-size: 4rem;
+			font-size: 5rem;
 			font-weight: 900;
-			margin-left: -0.7rem;
+			margin-block-start: -0.7rem;
 		}
 		span:nth-child(2) { 
-			color: blue;  
+			padding-inline-start: 2.5rem;
+			color: #01AFFF;  
 			font-family: "array";
-			font-size: 8rem;
+			font-size: 10rem;
 			font-weight: 400;
-			margin-top: -2.3rem;
+			margin-top: -2.5rem;
 		}
 }
 
 section.intro {
-	color: wheat;
-	p {
-		color: black;	
-	}
+	p.author-date{
+	font-size: 2rem;
+	font-weight: 400;
+	padding-inline-start: 2rem;
+	margin-block-start: -1rem;
+	color: #8ACD00;
 }
-/* This is how comments are different in CSS */
-/* also wanted to make the space between typography and is a grid tighter and tried line-hieght but it wasn't working, looked at margin instead on MDN */
+/* I need help getting this to jump to the right section*/
+nav li{
+	font-family: "array";
+	padding-block-start: 2rem;
+	margin: 2rem;
+	font-size: 1.5rem;
+	color: white;
+	background-color: #8ACD00;
+	padding:1rem;
+	font-weight: 400;
+    display: inline-block;
+	position: -webkit-sticky; 
+    }
+}
 
-section.intro {
-	font-size: 1.4rem;
-	font-weight: 300; 
-}
-p.author-date{
-	margin-bottom: 2rem;
-}
-/* unsure how to make readings and response nav appear on one line in seperate color boxes*/
-nav {
-	font-family: "helvetica neue";
-	font-size: 1rem;
-	font-weight: 700;
-	}
+section.byline {
 aside {
-font-size: 0.85rem;
-font-weight: 400; 
+font-size: 0.8rem;
+font-weight: 400;
+color: black;
 margin-top: 1rem;
-	/* not sure why :lastchild isn't highlighted orange in the code but it seems to be working okay*/
+padding: 5.6rem;
+line-height:1rem;
+max-inline-size: 50rem;
 	:last-child {
 	margin-top: 1.5rem;
 	margin-bottom: 2rem;
@@ -68,18 +96,28 @@ margin-top: 1rem;
 	font-style: italic;
 	}
 }
-#reading {
-font-size: 1rem;  
-margin-top: 1rem;
+}
 
-	blockquote:first-child {
+#reading {
+font-size: 1.5rem;  
+margin-top: 1rem;
+line-height: 1.5rem;
+
+	blockquote:nth-child(1) {
+	display:block;
 	font-size: 1.5rem;   
 	font-weight: 500;       
-	margin-bottom: 2rem;
+	margin-bottom: 12rem;
+	color: rgb(30, 0, 255);
+	padding-inline-start: 5.6rem;
 	}
-blockquote::first-line {
-	font-size: 2.06rem;       
-}
+		blockquote::first-line {
+		font-size: 3rem;    
+		color: #31BEFF;	
+		padding-block-end: 10rem;
+		max-inline-size: 50rem; 
+		padding-inline-start: 5.6rem;
+	}
 }
 p {
 	margin-top: 1.5rem
@@ -87,7 +125,7 @@ p {
 sup {
 	font-size: 0.7rem;
 	vertical-align: super;
-	line-height: 0;
+	line-height: 1;
 }
 section.footnotes {
 	font-size: 0.8rem;
@@ -95,6 +133,7 @@ section.footnotes {
 }
 section.figures blockquote.quote-one
 {
+	color:#2e1c16;
 	font-family: "IM Fell English", serif;
 	font-weight: 100;
 	font-size: 1.3rem;  
@@ -153,36 +192,37 @@ h2{
 			font-size: 4rem;
 			font-weight: 900;
 			margin-left: -0.7rem;
-}
+		}
 		span:nth-child(2) {
 		font-family: "helvetica";
 		font-size: 3.7rem;
 		font-weight: 900;
 		margin-top: -0.75rem;
-}
+		}
 		span:nth-child(3) {
 		font-family: "helvetica";
 		font-size: 1.7rem;
 		font-weight: 900;
 		color: #88B0FF;
 		margin-top: 0rem;
-}
-}
-p { 
-	line-height: 1.5rem;
-}
+		}
+	}
 cite {
 	font-style: italic;
 }
-blockquote.emphasis {
-	margin-top: 1.5rem;
+blockquote {
+	padding-top: 2rem;
+	
+	em {
+	margin-top: 3.5rem;
 	font-size: 1.5rem;   
 	font-weight: 500; 
-}
+	}
 /* MDN nth-last-child() Pseudo-class */
-blockquote.emphasis.span 
-{
+	span 
+	{
 	color: #88B0FF;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 500;
+	font-weight: 550;
+	}
 }
