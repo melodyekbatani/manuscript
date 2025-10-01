@@ -3,7 +3,6 @@
 }
 
 p {
-	color:black;
 	font-family: "inter";
 	size: 1.5rem;
 }
@@ -142,31 +141,46 @@ section.byline {
 }
 
 sup {
-	color: magenta;
-    font-size: 0.7rem;
-	
+    font-size: 0.8rem;
+	font-weight: 600;
     vertical-align: super;
     line-height: 1;
+	color: magenta;
+	
 }
 
 section.footnotes {
     font-size: 0.8rem;
     margin-bottom: 1rem;
+	color: magenta;
+	padding:1rem;
+	max-inline-size: 30rem;
+	margin-inline-start: 3.5rem;
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+				color:#01AFFF;
+			}
 }
 
 section.figures blockquote.quote-one {
     color:#2e1c16;
     font-family: "IM Fell English", serif;
     font-weight: 100;
-    font-size: 1.3rem;  
+    font-size: 1.5rem;  
     letter-spacing: 0.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
+	max-inline-size: 30rem;
+	margin-inline-start: 30rem;
 }
 
 figcaption {
     font-size: 0.8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+	max-inline-size: 30rem;
+	margin-inline-start: 30rem;
 }
 
 section.figures blockquote.quote-two {
