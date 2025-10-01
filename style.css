@@ -174,6 +174,17 @@ section.figures blockquote.quote-one {
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
 }
+.up{
+		vertical-align: 0.1rem;
+	}
+.down{
+		vertical-align: -0.1rem;
+	}
+.downdown{
+	{
+		vertical-align: -0.2rem;
+	}
+}
 
 figcaption {
     font-size: 0.8rem;
@@ -181,6 +192,8 @@ figcaption {
     margin-bottom: 1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
+	color: magenta;
+	font-family: "inter";
 }
 
 section.figures blockquote.quote-two {
