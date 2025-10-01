@@ -91,15 +91,23 @@ section.byline {
 }
 
 #reading .body {
-	font-size: 1.5rem;  
+	font-size: 1.5rem;
+
+	.blockquote-wrapper {
+		background-color: black;
+	}
+
+	blockquote {
+		margin-inline: auto;
+		width: fit-content;
+		text-align: center;
+	}
 
     blockquote:nth-child(1) {
 		display: block;
 		font-weight: 500;       
 		margin-block-end: 5rem;
 		color: yellow;
-		background-color: black;
-		padding-block-start: 8rem;
 		padding-block-end: 4rem;
 		/* padding-inline-start: 5.6rem; */
     }
@@ -109,13 +117,11 @@ section.byline {
         font-size: 2.95rem;    
         color: yellow; 
         margin-block-end: 1rem;
-		margin-inline-start: 7rem;
     }
 
 	blockquote div:nth-child(2) {
 		font-family:"Aldrich", sans-serif;
 		font-size: 7rem;	
-		margin-inline-start: 7rem;
 	}
 
 	blockquote div:last-child {
@@ -123,8 +129,7 @@ section.byline {
 		font-style: italic;
 		font-size: 1rem;
 		max-inline-size: 50rem; 
-		margin-block-start: 12rem;
-		margin-inline-start: 18rem;
+		margin-block-start: 17rem;
 	}
 }
 
@@ -133,7 +138,8 @@ section.byline {
 	font-size: 1;
     margin-top: 1.5rem;
 	padding:1rem;
-	margin:3rem;
+	margin-block:1.5;
+	margin-inline:3.5rem;
 	line-height:1.5;
 	max-inline-size: 50rem;
 	}
@@ -173,16 +179,25 @@ section.figures blockquote.quote-one {
     margin-bottom: 4rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
-}
-.up{
-		vertical-align: 0.1rem;
+
+	span:nth-child(4n) {
+	position: relative;
+	top: -5px;
 	}
-.down{
-		vertical-align: -0.1rem;
+
+	span:nth-child(4n + 1) {
+	position: relative;
+	top: -4px;
 	}
-.downdown{
-	{
-		vertical-align: -0.2rem;
+
+	span:nth-child(4n + 2) {
+	position: relative;
+	top: -3px;
+	}
+
+	span:nth-child(4n + 3) {
+	position: relative;
+	top: -2px;
 	}
 }
 
@@ -202,6 +217,12 @@ section.figures blockquote.quote-two {
     font-size: 2rem;  
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+	max-inline-size: 30rem;
+	margin-inline-start: 15rem;
+}
+
+.quote-two + figcaption {
+	margin-inline-start: 15rem;
 }
 
 section.figures blockquote.quote-three {
@@ -209,7 +230,8 @@ section.figures blockquote.quote-three {
     font-weight: 100;
     font-size: 2rem;  
     line-height: 1;
-    color: #352019
+	max-inline-size: 30rem;
+	margin-inline-start: 3rem;
 }
 
 section.figures blockquote.quote-three::first-letter {
@@ -218,6 +240,10 @@ section.figures blockquote.quote-three::first-letter {
     font-size: 7rem;  
     line-height: 1;
     color: #352019
+}
+
+.quote-three + figcaption {
+	margin-inline-start: 3rem;
 }
 
 section.footnotes-continued {
@@ -239,7 +265,7 @@ q {
 
 h2 {
     span {
-	    display:b lock;
+	    display:block;
     }
 
 	span:nth-child(1) {
