@@ -1,5 +1,5 @@
 :root {
-	font-size:150%;
+	font-size:125%;
 }
 
 p {
@@ -15,8 +15,8 @@ h1 {
 	span:nth-child(1) {  
 		padding-block-start: 3rem;
 		padding-inline-start: 3rem;
-		color: #01AFFF; 
-		font-family: "inter";
+		color: blue; 
+		font-family: "aldrich";
 		font-size: 5.2rem;
 		font-weight: 700;
 		margin-block-start: -0.7rem;
@@ -24,7 +24,7 @@ h1 {
 
 	span:nth-child(2) { 
 		padding-inline-start: 4rem;
-		color: #01AFFF;  
+		color: blue;  
 		font-family: "array";
 		font-size: 10rem;
 		font-weight: 400;
@@ -38,7 +38,7 @@ section.intro {
 		font-weight: 500;
 		padding-inline-start: 3.5rem;
 		margin-block-start: 1rem;
-		color: magenta;
+		color: blue;
 	}
 }
 
@@ -60,7 +60,7 @@ nav {
 		display: inline-block;
 
 		:hover  {
-				color: yellow;
+				color: blue;
 			}
 	}
 }
@@ -93,10 +93,11 @@ section.byline {
 #reading .body {
 	font-size: 1.5rem;
 
-	.blockquote-wrapper {
-		background-color: black;
+/*	.blockquote-wrapper {
+		padding: 3rem;
+		border-radius: 20;
 	}
-
+*/
 	blockquote {
 		margin-inline: auto;
 		width: fit-content;
@@ -107,7 +108,7 @@ section.byline {
 		display: block;
 		font-weight: 500;       
 		margin-block-end: 5rem;
-		color: yellow;
+		color:blue;
 		padding-block-end: 4rem;
 		padding-block-start: 3.6rem;
     }
@@ -115,7 +116,7 @@ section.byline {
     blockquote div:first-child {
 		font-family: "inter";
         font-size: 2.95rem;    
-        color: yellow; 
+        color: blue; 
         margin-block-end: 1rem;
     }
 
@@ -151,14 +152,14 @@ sup {
 	font-weight: 600;
     vertical-align: super;
     line-height: 1;
-	color: magenta;
+	color: blue;
 	
 }
 
 section.footnotes {
     font-size: 0.8rem;
     margin-bottom: 1rem;
-	color: magenta;
+	color: blue;
 	padding:1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 3.5rem;
@@ -166,7 +167,7 @@ section.footnotes {
 		text-decoration: underline;
 	}
 	a:hover {
-				color:#01AFFF;
+				color:blue;
 			}
 }
 
@@ -209,7 +210,7 @@ figcaption {
     margin-bottom: 1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
-	color: magenta;
+	color: blue;
 	font-family: "inter";
 }
 /* I noticed this Note that the hyphens override the measure. in the original text and looked into removing spaces and just using hypen auto and justified text on mdn*/
@@ -284,7 +285,7 @@ q {
 section.footnotes-continued {
     font-size: 0.8rem;
     margin-bottom: 1rem;
-	color: magenta;
+	color: blue;
 	padding:1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 3.5rem;
@@ -292,7 +293,7 @@ section.footnotes-continued {
 		text-decoration: underline;
 	}
 	a:hover {
-				color:#01AFFF;
+				color:blue;
 			}
 }
 
@@ -315,7 +316,7 @@ h2 {
 		font-size: 5rem;
 		font-weight: 900;
 		margin-left: -0.7rem;
-		color: #000083;
+		color: blue;
 	}
 
 	span:nth-child(2) {
@@ -323,14 +324,14 @@ h2 {
 		font-size: 4.9rem;
 		font-weight: 700;
 		margin-block-start: -0.75rem;
-		color: #000083;
+		color: blue;
 	}
 
 	span:nth-child(3) {
 		font-family: "helvetica";
 		font-size: 2.2rem;
 		font-weight: 900;
-		color: #EC0001;
+		color: blue;
 		margin-block-start: 0rem;
 	}
 }
@@ -340,7 +341,7 @@ h2 {
 		font-weight: 500;
 		padding-inline-start: 5rem;
 		margin-block-start: 4rem;
-		color: #05A302;
+		color: blue;
 		}
 	}
 section.response-text {
@@ -359,7 +360,7 @@ blockquote {
 	max-inline-size: 40rem;
 	font-size: 2rem;
 	font-family: "inter";
-	color: #000083;
+	color: blue;
     em {
     margin-block-start: 3.5rem; 
     font-weight: 500; 
@@ -367,7 +368,7 @@ blockquote {
 /* MDN nth-last-child() Pseudo-class */
     span 
     {
-    color:#05A302;
+    color:black;
     font-family: "inter", Helvetica, sans-serif;
     font-weight: 550;
     }
