@@ -8,6 +8,7 @@ p {
 }
 
 h1 {
+	padding-block-start: 5rem;
     span {
     	display:block;
 		text-align: center;
@@ -36,9 +37,10 @@ section.intro {
     p.author-date {
 		font-size: 2rem;
 		font-weight: 500;
-		padding-inline-start: 3.5rem;
+		padding-inline-start: 4.5rem;
 		margin-block-start: 5rem;
 		color: blue;
+		padding-block-end: 2rem;
 	}
 }
 
@@ -46,21 +48,24 @@ section.intro {
 nav {
 	margin-block-end: 7rem;
 	background-color: blue;
-	padding: 1;
-	position: -webkit-sticky;
+	padding: 1rem;
+	padding-inline-end: 49.5rem;
+	position: fixed;
+	z-index: 1000;
 
 	li {
-		font-family: "array";
+		font-family: "aldrich";
 		margin-inline-start: 3.5rem;
 		font-size: 1.5rem;
 		color: white;
 		border-radius: 10px;
 		padding:0.5rem;
-		font-weight: 400;
+		font-weight: 600;
 		display: inline-block;
+		text-align: center;
 
 		:hover  {
-				color: blue;
+				color: black;
 			}
 	}
 }
@@ -70,8 +75,7 @@ section.byline {
 		font-size: 0.8rem;
 		font-weight: 400;
 		color: black;
-		margin-block-start: 1rem;
-		padding: 4.5rem;
+		padding-inline-start: 4.5rem;
 		line-height:1.2rem;
 		max-inline-size: 40rem;
 
