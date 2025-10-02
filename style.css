@@ -109,7 +109,7 @@ section.byline {
 		margin-block-end: 5rem;
 		color: yellow;
 		padding-block-end: 4rem;
-		/* padding-inline-start: 5.6rem; */
+		padding-block-start: 3.6rem;
     }
 
     blockquote div:first-child {
@@ -176,10 +176,12 @@ section.figures blockquote.quote-one {
     font-weight: 100;
     font-size: 1.5rem;  
     letter-spacing: 0.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
+	margin-block-start: 5rem;
 
+/* I also looked at different ways to create spans without having to add span classes. this is were computation elements and pseudo selectors were very helpful. to code every element whose position in its parent so 4n + 2, means start at the 2nd child, then select every 4th after that */
 	span:nth-child(4n) {
 	position: relative;
 	top: -5px;
@@ -203,47 +205,61 @@ section.figures blockquote.quote-one {
 
 figcaption {
     font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-block-start: 0.1rem;
     margin-bottom: 1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 30rem;
 	color: magenta;
 	font-family: "inter";
 }
-
+/* I noticed this Note that the hyphens override the measure. in the original text and looked into removing spaces and just using hypen auto and justified text on mdn*/
 section.figures blockquote.quote-two {
     font-family: "UnifrakturMaguntia", cursive;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 2rem;  
     line-height: 2rem;
     margin-bottom: 1.5rem;
-	max-inline-size: 30rem;
+	width: 25rem;
 	margin-inline-start: 15rem;
+	hyphens: auto;
+	word-wrap: break-word;
+	text-align: justify;
+	margin-block-start: 3rem;
+	padding-block-start: 5rem;
 }
 
 .quote-two + figcaption {
 	margin-inline-start: 15rem;
+	max-inline-size: 25rem;
 }
 
 section.figures blockquote.quote-three {
     font-family: "ltc-goudy-text-pro-shaded", serif;
     font-weight: 100;
-    font-size: 2rem;  
+    font-size: 1.65rem;  
     line-height: 1;
-	max-inline-size: 30rem;
-	margin-inline-start: 3rem;
+	max-inline-size: 25rem;
+	margin-inline-start: 4.5rem;
+	margin-block-start: 3rem;
+	padding-block-start: 5rem;
 }
 
 section.figures blockquote.quote-three::first-letter {
     font-family: "ltc-goudy-text-pro-shaded", serif;
     font-weight: 500;
-    font-size: 7rem;  
-    line-height: 1;
-    color: #352019
+    font-size: 6.2rem;  
+	float: inline-start;
+	inline-size: 0.1rem;
+	margin-inline-end: 0.1rem;
+	padding: 0.2rem;
+	margin-inline-start: 3rem;
 }
 
 .quote-three + figcaption {
-	margin-inline-start: 3rem;
+	margin-inline-start: 4rem;
+	max-inline-size: 30rem;
+	margin-block-start: 1rem;
+	padding-block-end: 3rem;
 }
 
 section.footnotes-continued {
@@ -254,47 +270,119 @@ section.footnotes-continued {
 q {
     font-style: italic;
 }
+.body-continued {
+	p {
+	font-size: 1.5rem;
+    margin-top: 1.5rem;
+	padding:1rem;
+	margin-block:1.5;
+	margin-inline:3.5rem;
+	line-height:1.5;
+	max-inline-size: 50rem;
+	}
+}
+section.footnotes-continued {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+	color: magenta;
+	padding:1rem;
+	max-inline-size: 30rem;
+	margin-inline-start: 3.5rem;
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+				color:#01AFFF;
+			}
+}
 
 /* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
 #response {
-    background-color: #2e1c16;
     width: 100%;
-    color: #fdf0d9;
-    padding: 3rem;
+    color:black;
+	padding-block-start: 5rem;
 }
 
 h2 {
     span {
 	    display:block;
+		margin-block-start: 3rem;
+		padding-inline-start: 5rem;
     }
 
 	span:nth-child(1) {
-		font-family: "helvetica neue";
-		font-size: 4rem;
+		font-family: "Aldrich";
+		font-size: 5rem;
 		font-weight: 900;
 		margin-left: -0.7rem;
+		color: #000083;
 	}
 
 	span:nth-child(2) {
 		font-family: "helvetica";
-		font-size: 3.7rem;
-		font-weight: 900;
-		margin-top: -0.75rem;
+		font-size: 4.9rem;
+		font-weight: 700;
+		margin-block-start: -0.75rem;
+		color: #000083;
 	}
 
 	span:nth-child(3) {
 		font-family: "helvetica";
-		font-size: 1.7rem;
+		font-size: 2.2rem;
 		font-weight: 900;
-		color: #88B0FF;
-		margin-top: 0rem;
+		color: #EC0001;
+		margin-block-start: 0rem;
 	}
+}
+	section.intro-response{
+    	p.author-date {
+		font-size: 2rem;
+		font-weight: 500;
+		padding-inline-start: 5rem;
+		margin-block-start: 4rem;
+		color: #05A302;
+		}
+	}
+section.response-text {
+	p {
+	font-size: 1.5rem;
+    margin-top: 1.5rem;
+	padding:1rem;
+	margin-block:1.5;
+	margin-inline:3.5rem;
+	line-height:1.5;
+	max-inline-size: 50rem;
+	}
+blockquote {
+    padding-top: 2rem;
+    margin-inline:7rem;
+	max-inline-size: 40rem;
+	font-size: 2rem;
+	font-family: "inter";
+	color: #000083;
+    em {
+    margin-block-start: 3.5rem; 
+    font-weight: 500; 
+    }
+/* MDN nth-last-child() Pseudo-class */
+    span 
+    {
+    color:#05A302;
+    font-family: "inter", Helvetica, sans-serif;
+    font-weight: 550;
+    }
+}
 }
 
 cite {
     font-style: italic;
 }
 
-blockquote {
-    padding-top: 2rem;    
+footer {
+	padding-top: 5rem;
+    margin-inline:3.5rem;
+	padding-block-end: 3rem;
+	max-inline-size: 40rem;
+	font-size: 2rem;
+	font-family: "inter"
 }
