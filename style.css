@@ -10,25 +10,25 @@ p {
 h1 {
     span {
     	display:block;
+		text-align: center;
     }
 
 	span:nth-child(1) {  
-		padding-block-start: 3rem;
-		padding-inline-start: 3rem;
+		padding-block-start: 5rem;
 		color: blue; 
 		font-family: "aldrich";
-		font-size: 5.2rem;
+		font-size: 7rem;
 		font-weight: 700;
 		margin-block-start: -0.7rem;
 	}
 
 	span:nth-child(2) { 
-		padding-inline-start: 4rem;
-		color: blue;  
+		padding-inline-start: 1.5rem;
+		color: black;  
 		font-family: "array";
-		font-size: 10rem;
-		font-weight: 400;
-		margin-top: -2.5rem;
+		font-size: 13.5rem;
+		font-weight: 500;
+		margin-top: -3.5rem;
 	}
 }
 
@@ -37,23 +37,23 @@ section.intro {
 		font-size: 2rem;
 		font-weight: 500;
 		padding-inline-start: 3.5rem;
-		margin-block-start: 1rem;
+		margin-block-start: 5rem;
 		color: blue;
 	}
 }
 
 /* I need help getting this to jump to the right section*/
 nav {
-	margin-block-start: 3rem;
 	margin-block-end: 7rem;
+	background-color: blue;
+	padding: 1;
+	position: -webkit-sticky;
 
 	li {
 		font-family: "array";
-		padding-block-start: 2rem;
 		margin-inline-start: 3.5rem;
 		font-size: 1.5rem;
 		color: white;
-		background-color: black;
 		border-radius: 10px;
 		padding:0.5rem;
 		font-weight: 400;
