@@ -4,32 +4,33 @@
 
 p {
 	font-family: "inter";
-	size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 h1 {
-	padding-block-start: 5rem;
+	padding-block-start: 12rem;
+	padding-block-end: 5rem;
     span {
     	display:block;
-		text-align: center;
+		text-align:center;
     }
 
 	span:nth-child(1) {  
 		padding-block-start: 5rem;
 		color: blue; 
-		font-family: "aldrich";
-		font-size: 7rem;
-		font-weight: 700;
-		margin-block-start: -0.7rem;
+		font-family: "Teko", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 75%;
+		font-size: 14.7rem;
 	}
 
 	span:nth-child(2) { 
-		padding-inline-start: 1.5rem;
-		color: black;  
-		font-family: "array";
-		font-size: 13.5rem;
+		color: blue;   
+		font-family: 'Array', sans-serif;
+		font-size: 12rem;
 		font-weight: 500;
-		margin-top: -3.5rem;
+		margin-top: -4.5rem;
 	}
 }
 
@@ -40,69 +41,67 @@ section.intro {
 		padding-inline-start: 4.5rem;
 		margin-block-start: 5rem;
 		color: blue;
-		padding-block-end: 2rem;
+		padding-block-end: 1rem;
 	}
 }
 
 /* I need help getting this to jump to the right section*/
 nav {
-	margin-block-end: 7rem;
 	background-color: blue;
 	padding: 1rem;
-	padding-inline-end: 49.5rem;
 	position: fixed;
 	z-index: 1000;
 	/* Zarah taught me this */
+	width: 100%;
 
 	li {
-		font-family: "aldrich";
+		font-family: "Teko", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 85%;
 		margin-inline-start: 3.5rem;
-		font-size: 1.5rem;
+		font-size: 3rem;
 		color: white;
 		border-radius: 10px;
 		padding:0.5rem;
-		font-weight: 600;
 		display: inline-block;
 		text-align: center;
 
 		:hover  {
-				color: black;
+				color: #b8b8b8;
 			}
 	}
 }
 
 section.byline {
 	aside {
-		font-size: 0.8rem;
-		font-weight: 400;
-		color: black;
-		padding-inline-start: 4.5rem;
-		line-height:1.2rem;
-		max-inline-size: 40rem;
+			p{
+			font-size: 1rem;
+			font-weight: 400;
+			color: black;
+			padding-inline-start: 4.5rem;
+			padding-block-start: 2rem;
+			line-height:1.5rem;
+			max-inline-size: 40rem;
 
-		:last-child {
-			margin-top: 1.5rem;
-			margin-bottom: 3rem;
-		}
-		
-		cite {
-			font-style: italic;
-		}
+			:last-child {
+				margin-top: 1.5rem;
+				margin-bottom: 3rem;
+			}
+			
+			cite {
+				font-style: italic;
+			}
 
-		time {
-			font-style: italic;
+			time {
+				font-style: italic;
+			}
 		}
 	}
 }
 
 #reading .body {
-	font-size: 1.5rem;
 
-/*	.blockquote-wrapper {
-		padding: 3rem;
-		border-radius: 20;
-	}
-*/
 	blockquote {
 		margin-inline: auto;
 		width: fit-content;
@@ -112,7 +111,8 @@ section.byline {
     blockquote:nth-child(1) {
 		display: block;
 		font-weight: 500;       
-		margin-block-end: 5rem;
+		margin-block-end: 1rem;
+		margin-block-start: 3rem;
 		color:blue;
 		padding-block-end: 4rem;
 		padding-block-start: 3.6rem;
@@ -122,26 +122,31 @@ section.byline {
 		font-family: "inter";
         font-size: 2.95rem;    
         color: blue; 
-        margin-block-end: 1rem;
+        padding-block-end: -0.2rem;
     }
 
 	blockquote div:nth-child(2) {
-		font-family:"Aldrich", sans-serif;
-		font-size: 7rem;	
+		height: 50%;
+		font-family: "Teko", sans-serif;
+  		font-weight: 300;
+  		font-style: normal;
+		font-size: 14.5rem;	
+		padding-block-start: -10rem;
+		line-height: 85%;
 	}
 
 	blockquote div:last-child {
 		font-family: "times new roman";
 		font-style: italic;
-		font-size: 1rem;
+		font-size: 1.25rem;
+		font-weight: 700;
 		max-inline-size: 50rem; 
-		margin-block-start: 17rem;
+		margin-block-start: 10rem;
 	}
 }
 
 .body {
 	p {
-	font-size: 1;
     margin-top: 1.5rem;
 	padding:1rem;
 	margin-block:1.5;
@@ -162,7 +167,9 @@ sup {
 }
 
 section.footnotes {
+	p{
     font-size: 0.8rem;
+	}
     margin-bottom: 1rem;
 	color: blue;
 	padding:1rem;
@@ -172,19 +179,19 @@ section.footnotes {
 		text-decoration: underline;
 	}
 	a:hover {
-				color:blue;
+				color:#8c8c8c;
 			}
 }
 
 section.figures blockquote.quote-one {
-    color:#2e1c16;
+    color:black;
     font-family: "IM Fell English", serif;
     font-weight: 100;
     font-size: 1.5rem;  
     letter-spacing: 0.2rem;
     margin-bottom: 2rem;
-	max-inline-size: 30rem;
-	margin-inline-start: 30rem;
+	max-inline-size: 35rem;
+	margin-inline-start: 35rem;
 	margin-block-start: 5rem;
 
 /* I also looked at different ways to create spans without having to add span classes. this is were computation elements and pseudo selectors were very helpful. to code every element whose position in its parent so 4n + 2, means start at the 2nd child, then select every 4th after that */
@@ -205,7 +212,7 @@ section.figures blockquote.quote-one {
 
 	span:nth-child(4n + 3) {
 	position: relative;
-	top: 2px;
+	top: 3px;
 	}
 }
 
@@ -213,41 +220,58 @@ figcaption {
     font-size: 0.8rem;
     margin-block-start: 0.1rem;
     margin-bottom: 1rem;
-	max-inline-size: 30rem;
-	margin-inline-start: 30rem;
+	max-inline-size: 35rem;
+	margin-inline-start: 35rem;
 	color: blue;
 	font-family: "inter";
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+				color:#8c8c8c;
+			}
 }
 /* I noticed this Note that the hyphens override the measure. in the original text and looked into removing spaces and just using hypen auto and justified text on mdn*/
 section.figures blockquote.quote-two {
     font-family: "UnifrakturMaguntia", cursive;
     font-weight: 200;
-    font-size: 2rem;  
+    font-size: 2.6rem;  
+	letter-spacing: 0.1rem;
     line-height: 2rem;
-    margin-bottom: 1.5rem;
-	width: 25rem;
-	margin-inline-start: 15rem;
+    margin-block-end: 1.5rem;
+	width: 35rem;
 	hyphens: auto;
 	word-wrap: break-word;
 	text-align: justify;
 	margin-block-start: 3rem;
 	padding-block-start: 5rem;
+	margin:auto;
+	text-align-last: justify;
+	scale: 75%;
 }
 
 .quote-two + figcaption {
-	margin-inline-start: 15rem;
+	margin-inline-start: 25rem;
 	max-inline-size: 25rem;
+	margin-block-start: -2rem;
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+				color:#8c8c8c;
+			}
 }
 
 section.figures blockquote.quote-three {
     font-family: "ltc-goudy-text-pro-shaded", serif;
     font-weight: 100;
-    font-size: 1.65rem;  
+    font-size: 1.7rem;  
     line-height: 1;
-	max-inline-size: 25rem;
+	max-inline-size: 35rem;
 	margin-inline-start: 4.5rem;
 	margin-block-start: 3rem;
 	padding-block-start: 5rem;
+	text-align: justify;
 }
 
 section.figures blockquote.quote-three::first-letter {
@@ -255,17 +279,21 @@ section.figures blockquote.quote-three::first-letter {
     font-weight: 500;
     font-size: 6.2rem;  
 	float: inline-start;
-	inline-size: 0.1rem;
 	margin-inline-end: 0.1rem;
 	padding: 0.2rem;
-	margin-inline-start: 3rem;
 }
 
 .quote-three + figcaption {
 	margin-inline-start: 4rem;
-	max-inline-size: 30rem;
+	max-inline-size: 40rem;
 	margin-block-start: 1rem;
 	padding-block-end: 3rem;
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+				color:#8c8c8c;
+			}
 }
 
 section.footnotes-continued {
@@ -278,7 +306,6 @@ q {
 }
 .body-continued {
 	p {
-	font-size: 1.5rem;
     margin-top: 1.5rem;
 	padding:1rem;
 	margin-block:1.5;
@@ -288,20 +315,31 @@ q {
 	}
 }
 section.footnotes-continued {
+		p{
     font-size: 0.8rem;
+	}
     margin-bottom: 1rem;
 	color: blue;
 	padding:1rem;
 	max-inline-size: 30rem;
 	margin-inline-start: 3.5rem;
+}
+.link {
+	color: blue;
+	font-size: 4rem;
+	font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 85%;
+	margin-inline-start: 55rem;
+	margin-block-start: 5rem;
 	a {
 		text-decoration: underline;
 	}
 	a:hover {
-				color:blue;
+				color:#8c8c8c;
 			}
 }
-
 /* learnt this from MDN multiple background article and background size but I want the text to align to the margin above*/
 #response {
     width: 100%;
@@ -310,33 +348,31 @@ section.footnotes-continued {
 }
 
 h2 {
+	text-align: center;
     span {
 	    display:block;
-		margin-block-start: 3rem;
-		padding-inline-start: 5rem;
+		margin-block-start: 10rem;
     }
 
 	span:nth-child(1) {
-		font-family: "Aldrich";
-		font-size: 5rem;
-		font-weight: 900;
+		font-family: "Array";
+        font-weight: 300;
+        font-style: normal;
+        line-height: 80%;
+		letter-spacing: 0.5rem;
+		font-size: 9.2rem;
 		margin-left: -0.7rem;
 		color: blue;
 	}
 
 	span:nth-child(2) {
-		font-family: "helvetica";
-		font-size: 4.9rem;
-		font-weight: 700;
-		margin-block-start: -0.75rem;
+		font-family: "Teko", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 100%;
+		font-size: 9.7rem;
 		color: blue;
-	}
-
-	span:nth-child(3) {
-		font-family: "helvetica";
-		font-size: 2.2rem;
-		font-weight: 900;
-		color: blue;
+		margin-inline-start: -1rem;
 		margin-block-start: 0rem;
 	}
 }
@@ -344,38 +380,41 @@ h2 {
     	p.author-date {
 		font-size: 2rem;
 		font-weight: 500;
-		padding-inline-start: 5rem;
-		margin-block-start: 4rem;
+		padding-inline-start: 4.5rem;
+		padding-block-end: 3rem;
+		margin-block-start: 15rem;
 		color: blue;
 		}
 	}
 section.response-text {
 	p {
-	font-size: 1.5rem;
-    margin-top: 1.5rem;
 	padding:1rem;
-	margin-block:1.5;
+	margin-block:2.5;
 	margin-inline:3.5rem;
 	line-height:1.5;
-	max-inline-size: 50rem;
+	max-inline-size: 60rem;
 	}
 blockquote {
-    padding-top: 2rem;
-    margin-inline:7rem;
-	max-inline-size: 40rem;
-	font-size: 2rem;
-	font-family: "inter";
-	color: blue;
-    em {
+    padding-block: 4rem;
+	max-inline-size: 68rem;
+	margin-inline-start: 4.5rem;
+	font-size: 4rem;
+	font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 100%;	
+	color:black;
+    letter-spacing: 0.85;
+	em {
     margin-block-start: 3.5rem; 
-    font-weight: 500; 
     }
 /* MDN nth-last-child() Pseudo-class */
-    span 
-    {
-    color:black;
-    font-family: "inter", Helvetica, sans-serif;
-    font-weight: 550;
+    span {
+	color: blue;
+	font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 100%;	
     }
 }
 }
@@ -385,10 +424,32 @@ cite {
 }
 
 footer {
-	padding-top: 5rem;
-    margin-inline:3.5rem;
-	padding-block-end: 3rem;
-	max-inline-size: 40rem;
-	font-size: 2rem;
-	font-family: "inter"
+	background-color: blue;
+	z-index: 1000;
+	/* Zarah taught me this */
+	width: 100%;
+	padding-block-end: 2rem;
+	margin-block-start: 4rem;
+p{
+	padding-block-start: 2rem;
+	font-family: "Teko", sans-serif;
+    font-weight: 300;
+	font-style: normal;
+    line-height: 85%;
+	font-size: 3rem;
+	color: white;
+	display: inline-block;
+	padding-inline-start: 3.5rem;
+
+		
+	:hover  {
+				color: #b8b8b8;
+			}
+	}
+a {
+	text-align: right;
+	vertical-align: -0.5rem;
+	padding-inline-start: 48rem;
+	}
 }
+	
