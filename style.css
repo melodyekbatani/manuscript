@@ -106,23 +106,16 @@ nav {
 		margin-inline: auto;
 		width: fit-content;
 		text-align: center;
-	}
-
-    blockquote:nth-child(1) {
-		display: block;
-		font-weight: 500;       
 		margin-block-end: 1rem;
 		margin-block-start: 3rem;
-		color:blue;
 		padding-block-end: 4rem;
 		padding-block-start: 3.6rem;
-    }
-
+		color: blue; 
+	}
     blockquote div:first-child {
 		font-family: "inter";
 		width: max-content;
-        font-size: 2.9rem;    
-        color: blue; 
+        font-size: 3rem;    
         padding-block-end: -0.2rem;
 		text-align: justify;
     }
