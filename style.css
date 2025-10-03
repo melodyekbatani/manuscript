@@ -120,9 +120,10 @@ nav {
 
     blockquote div:first-child {
 		font-family: "inter";
-        font-size: 2.7rem;    
+        font-size: 2.9rem;    
         color: blue; 
         padding-block-end: -0.2rem;
+		text-align: justify;
     }
 
 	blockquote div:nth-child(2) {
