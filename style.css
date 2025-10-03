@@ -120,6 +120,7 @@ nav {
 
     blockquote div:first-child {
 		font-family: "inter";
+		width: max-content;
         font-size: 2.9rem;    
         color: blue; 
         padding-block-end: -0.2rem;
