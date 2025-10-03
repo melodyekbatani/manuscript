@@ -73,7 +73,7 @@ nav {
 	}
 }
 
-section.byline {
+.byline {
 	aside {
 			p{
 			font-size: 1rem;
@@ -166,7 +166,7 @@ sup {
 	
 }
 
-section.footnotes {
+.footnotes {
 	p{
     font-size: 0.8rem;
 	}
@@ -183,7 +183,7 @@ section.footnotes {
 			}
 }
 
-section.figures blockquote.quote-one {
+.figures blockquote.quote-one {
     color:black;
     font-family: "IM Fell English", serif;
     font-weight: 100;
@@ -232,7 +232,7 @@ figcaption {
 			}
 }
 /* I noticed this Note that the hyphens override the measure. in the original text and looked into removing spaces and just using hypen auto and justified text on mdn*/
-section.figures blockquote.quote-two {
+.figures blockquote.quote-two {
     font-family: "UnifrakturMaguntia", cursive;
     font-weight: 200;
     font-size: 2.6rem;  
@@ -262,7 +262,7 @@ section.figures blockquote.quote-two {
 			}
 }
 
-section.figures blockquote.quote-three {
+.figures blockquote.quote-three {
     font-family: "ltc-goudy-text-pro-shaded", serif;
     font-weight: 100;
     font-size: 1.7rem;  
@@ -274,7 +274,7 @@ section.figures blockquote.quote-three {
 	text-align: justify;
 }
 
-section.figures blockquote.quote-three::first-letter {
+.figures blockquote.quote-three::first-letter {
     font-family: "ltc-goudy-text-pro-shaded", serif;
     font-weight: 500;
     font-size: 6.2rem;  
@@ -296,7 +296,7 @@ section.figures blockquote.quote-three::first-letter {
 			}
 }
 
-section.footnotes-continued {
+.footnotes-continued {
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
@@ -314,7 +314,7 @@ q {
 	max-inline-size: 50rem;
 	}
 }
-section.footnotes-continued {
+.footnotes-continued {
 		p{
     font-size: 0.8rem;
 	}
@@ -376,7 +376,7 @@ h2 {
 		margin-block-start: 0rem;
 	}
 }
-	section.intro-response{
+	.intro-response{
     	p.author-date {
 		font-size: 2rem;
 		font-weight: 500;
@@ -386,7 +386,7 @@ h2 {
 		color: blue;
 		}
 	}
-section.response-text {
+.response-text {
 	p {
 	padding:1rem;
 	margin-block:2.5;
