@@ -285,7 +285,7 @@ section.figures blockquote.quote-three::first-letter {
 
 .quote-three + figcaption {
 	margin-inline-start: 4rem;
-	max-inline-size: 40rem;
+	max-inline-size: 35rem;
 	margin-block-start: 1rem;
 	padding-block-end: 3rem;
 	a {
