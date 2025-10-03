@@ -249,7 +249,7 @@ section.figures blockquote.quote-two {
 	text-align-last: justify;
 	scale: 75%;
 }
-
+/* my code tutor taught me this. It targets caption adjacent to quote 2*/
 .quote-two + figcaption {
 	margin-inline-start: 25rem;
 	max-inline-size: 25rem;
