@@ -6,54 +6,14 @@ p {
 	font-family: "inter";
 	font-size: 1rem;
 }
-
-h1 {
-	padding-block-start: 5rem;
-	padding-block-end: 2rem;
-
-	span {
-		display: block;
-		text-align: center;
-	}
-
-	span:nth-child(1) {
-		padding-block-start: 5rem;
-		color: blue;
-		font-family: "Teko", sans-serif;
-		font-weight: 300;
-		font-style: normal;
-		line-height: 75%;
-		font-size: 14.7rem;
-	}
-
-	span:nth-child(2) {
-		color: blue;
-		font-family: 'Array', sans-serif;
-		font-size: 12rem;
-		font-weight: 500;
-		margin-block-start: -4.5rem;
-	}
-}
-
-section.intro {
-	p.author-date {
-		font-size: 2rem;
-		font-weight: 500;
-		padding-inline-start: 4.5rem;
-		margin-block-start: 5rem;
-		color: blue;
-		padding-block-end: 1rem;
-	}
-}
-
 /* I need help getting this to jump to the right section*/
 nav {
 	background-color: blue;
 	padding: 0.25rem;
-	position: fixed;
 	z-index: 1000;
+	position: fixed;
 	/* Zarah taught me this */
-	width: 100%;
+	width: 100vw;
 
 	li {
 		font-family: "Teko", sans-serif;
@@ -98,6 +58,44 @@ nav {
 				font-style: italic;
 			}
 		}
+	}
+}
+h1 {
+	padding-block-start: 5rem;
+	padding-block-end: 2rem;
+
+	span {
+		display: block;
+		text-align: center;
+	}
+
+	span:nth-child(1) {
+		padding-block-start: 5rem;
+		color: blue;
+		font-family: "Teko", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		line-height: 75%;
+		font-size: 14.7rem;
+	}
+
+	span:nth-child(2) {
+		color: blue;
+		font-family: 'Array', sans-serif;
+		font-size: 12rem;
+		font-weight: 500;
+		margin-block-start: -4.5rem;
+	}
+}
+
+section.intro {
+	p.author-date {
+		font-size: 2rem;
+		font-weight: 500;
+		padding-inline-start: 4.5rem;
+		margin-block-start: 5rem;
+		color: blue;
+		padding-block-end: 0rem;
 	}
 }
 
@@ -148,7 +146,7 @@ nav {
 		margin-block: 1.5;
 		margin-inline: 3.5rem;
 		line-height: 1.5;
-		max-inline-size: 50rem;
+		max-inline-size: 70%;
 	}
 }
 
@@ -474,3 +472,43 @@ footer {
 		color: white;
 	}
 }
+/* mobile */
+@media screen and (max-width: 420px) {
+	h1 {
+	text-align: center;
+	padding-block-start: 3rem;
+	padding-block-end: 3rem;
+	margin: 0 auto;
+	padding-inline: 0;
+	margin-inline: 0;
+	width: 100vw;
+
+	span {
+		margin-inline: 0;
+	}
+
+	span:nth-child(1) {
+		padding-inline: 0;
+		padding-block-start: 5rem;
+		color: blue;
+		font-family: "Teko", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		line-height: 75%;
+		font-size: 7rem;
+		text-align: center;
+	}
+
+	span:nth-child(2) {
+		padding-inline: 0;
+		color: blue;
+		font-family: 'Array', sans-serif;
+		font-size: 5rem;
+		font-weight: 500;
+		margin-block-start: -4.5rem;
+	}
+}
+	}
+	h2 {
+		text-align: center;
+	}
