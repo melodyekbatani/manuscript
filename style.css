@@ -10,6 +10,7 @@ p {
 /* I need help getting this to jump to the right section*/
 nav {
 	background-color: blue;
+	opacity: 80%;
 	padding: 0.25rem;
 	z-index: 1000;
 	position: fixed;
@@ -347,6 +348,7 @@ q {
 	width: 100%;
 	color: black;
 	padding-block-start: 5rem;
+	background: linear-gradient(white, rgb(199, 199, 199));
 }
 
 h2 {
@@ -434,11 +436,12 @@ cite {
 
 footer {
 	background-color: blue;
+	opacity: 80%;
 	z-index: 1000;
 	/* Zarah taught me this */
 	width: 100%;
 	padding-block-end: 0rem;
-	margin-block-start: 4rem;
+	margin-block-start: 0rem;
 	overflow-x: hidden;
 
 	p {
@@ -1043,6 +1046,7 @@ footer {
 
 	nav {
 		overflow-x: hidden;
+
 		li {
 			margin-inline-start: 0rem;
 		}
@@ -1083,9 +1087,9 @@ footer {
 			color: blue;
 		}
 	}
-.figures {
 
-}
+	.figures {}
+
 	.figures blockquote.quote-one {
 		font-size: 1rem;
 		margin-inline-start: 20rem;
@@ -1095,7 +1099,7 @@ footer {
 
 	figcaption {
 		margin-inline-start: 20rem;
-		max-inline-size: 35ch; 
+		max-inline-size: 35ch;
 	}
 
 	.figures blockquote.quote-two {
@@ -1105,15 +1109,15 @@ footer {
 		width: 35ch;
 		scale: 100%;
 		padding: 0rem;
-		margin-block-start: 5rem; 
+		margin-block-start: 5rem;
 	}
 
 	.quote-two+figcaption {
-		margin-block-start: 2rem; 
+		margin-block-start: 2rem;
 		margin-inline-start: 10rem;
 		width: 35ch;
-		
-		
+
+
 
 		a {
 			text-decoration: underline;
@@ -1130,7 +1134,7 @@ footer {
 		max-width: 40ch;
 		margin-inline-start: 1rem;
 		margin-block-start: 2rem;
-		text-align: justify; 
+		text-align: justify;
 	}
 
 	.figures blockquote.quote-three::first-letter {
@@ -1140,14 +1144,14 @@ footer {
 		max-width: 25ch;
 		float: inline-start;
 		margin-inline-end: 0.1rem;
-		padding: 0.2rem; 
+		padding: 0.2rem;
 	}
 
 	.quote-three+figcaption {
 		margin-inline-start: 1rem;
 		margin-block-start: 1rem;
 		padding-block-end: 3rem;
-		max-inline-size: 30ch; 
+		max-inline-size: 30ch;
 
 		a {
 			text-decoration: underline;
@@ -1185,6 +1189,7 @@ footer {
 			font-size: 1rem;
 		}
 	}
+
 	.link {
 		font-size: 2rem;
 		font-family: "Teko", sans-serif;
@@ -1212,6 +1217,7 @@ footer {
 			padding-block-end: 0rem;
 		}
 	}
+
 	.footnotes {
 		margin-inline-start: 0rem;
 	}
@@ -1227,7 +1233,8 @@ footer {
 		color: black;
 		padding-block-start: 5rem;
 	}
-#reading .body {
+
+	#reading .body {
 		blockquote {
 			padding-block: 4rem;
 			font-size: 2.5rem;
