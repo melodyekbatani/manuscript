@@ -104,43 +104,33 @@ section.intro {
 #reading .body {
 
 	blockquote {
-		margin-inline: auto;
-		width: fit-content;
-		text-align: center;
-		margin-block-end: 1rem;
-		margin-block-start: 3rem;
-		padding-block-end: 4rem;
-		padding-block-start: 3.6rem;
-		color: blue;
-	}
-
-	blockquote div:first-child {
-		font-family: "inter";
-		width: max-content;
-		font-size: 3rem;
-		padding-block-end: -0.2rem;
-		text-align: justify;
-	}
-
-	blockquote div:nth-child(2) {
-		height: 50%;
+		padding-block: 4rem;
+		max-inline-size: 68rem;
+		margin-inline-start:8rem;
+		margin-inline-end:12rem;
+		font-size: 4rem;
+		text-wrap: balance;
 		font-family: "Teko", sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		font-size: 14.5rem;
-		padding-block-start: -10rem;
-		line-height: 85%;
-	}
+		line-height: 100%;
+		color: black;
+		letter-spacing: 0.85;
 
-	blockquote div:last-child {
-		font-family: "Teko", sans-serif;
-		font-style: italic;
-		font-size: 1.25rem;
-		font-weight: 400;
-		max-inline-size: 50rem;
-		margin-block-start: 10rem;
+		em {
+			margin-block-start: 3.5rem;
+		}
+
+		/* MDN nth-last-child() Pseudo-class */
+		span {
+			color: blue;
+			font-family: "Teko", sans-serif;
+			font-weight: 300;
+			font-style: normal;
+			line-height: 100%;
+		}
 	}
-}
+} 
 
 .body {
 	p {
@@ -317,7 +307,7 @@ q {
 		margin-block: 1.5;
 		margin-inline: 3.5rem;
 		line-height: 1.5;
-		max-inline-size: 50rem;
+		max-inline-size: 70%;
 	}
 }
 
@@ -340,7 +330,7 @@ q {
 	font-weight: 300;
 	font-style: normal;
 	line-height: 85%;
-	margin-inline-start: 55rem;
+	margin-inline-start: 4.5rem;
 	margin-block-start: 5rem;
 
 	a {
@@ -407,14 +397,15 @@ h2 {
 		margin-block: 2.5;
 		margin-inline: 3.5rem;
 		line-height: 1.5;
-		max-inline-size: 60rem;
+		max-inline-size: 70%;
 	}
 
 	blockquote {
 		padding-block: 4rem;
 		max-inline-size: 68rem;
-		margin-inline-start: 4.5rem;
-		font-size: 2rem;
+		margin-inline-start:8rem;
+		margin-inline-end: 12rem;
+		font-size: 4rem;
 		font-family: "Teko", sans-serif;
 		font-weight: 300;
 		font-style: normal;
@@ -446,16 +437,18 @@ footer {
 	z-index: 1000;
 	/* Zarah taught me this */
 	width: 100%;
-	padding-block-end: 2rem;
+	padding-block-end: 0rem;
 	margin-block-start: 4rem;
+	overflow-x:hidden;
 
 	p {
-		padding-block-start: 2rem;
+		padding-block-start: 1rem;
+		padding-block-end: 1rem;
 		font-family: "Teko", sans-serif;
 		font-weight: 300;
 		font-style: normal;
 		line-height: 85%;
-		font-size: 3rem;
+		font-size: 2rem;
 		color: white;
 		display: inline-block;
 		padding-inline-start: 3.5rem;
@@ -478,10 +471,12 @@ footer {
 	}
 }
 
-/* mobile */
-@media screen and (max-width: 420px) {
+/* mobile + ipad */
+@media screen and (max-width: 430px) {
 	body {
-		overflow-x: hidden;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 	}
 
 	nav {
@@ -528,9 +523,7 @@ footer {
 	}
 
 	.link {
-		text-align: left;
-		color: blue;
-		font-size: 4rem;
+		font-size: 2rem;
 		font-family: "Teko", sans-serif;
 		font-weight: 300;
 		font-style: normal;
@@ -553,7 +546,6 @@ footer {
 			font-weight: 500;
 			padding-inline-start: 1rem;
 			margin-block-start: 5rem;
-			color: blue;
 			padding-block-end: 0rem;
 		}
 	}
@@ -567,7 +559,7 @@ footer {
 		}
 	}
 
-	#reading .body {
+	/* #reading .body {
 
 		blockquote {
 			margin-inline: auto;
@@ -603,7 +595,8 @@ footer {
 			font-weight: 200;
 			margin-block-start: 10rem;
 		}
-	}
+	} */
+
 	.body-continued {
 		p {
 			margin-inline: 0rem;
@@ -612,6 +605,7 @@ footer {
 			font-size: 0.75rem;
 		}
 	}
+
 	.response-text {
 		p {
 			margin-inline: 0rem;
@@ -622,79 +616,148 @@ footer {
 	}
 
 	.figures blockquote.quote-one {
-	font-size: 1rem;
-	margin-inline-start: 1rem;
-	margin-block-start: 5rem;
-}
-
-figcaption {
-	margin-inline-start: 1rem;
-}
-
-.figures blockquote.quote-two {
-	font-size: 1rem;
-	line-height: 1rem;
-	width: 35ch;
-	scale: 100%;
-	padding: 0rem;
-	margin-inline-start: 1rem;
-	margin-block-start: 4rem;
-}
-
-/* my code tutor taught me this. It targets caption adjacent to quote 2*/
-.quote-two+figcaption {
-	margin-inline-start: 1rem;
-	max-inline-size: 25rem;
-	margin-block-start: 2rem;
-
-	a {
-		text-decoration: underline;
+		font-size: 1rem;
+		margin-inline-start: 1rem;
+		margin-block-start: 5rem;
+		max-width: 35ch;
 	}
 
-	a:hover {
-		color: #8c8c8c;
-	}
-}
-
-.figures blockquote.quote-three {
-	font-family: "ltc-goudy-text-pro-shaded", serif;
-	font-weight: 100;
-	font-size: 1.7rem;
-	line-height: 1;
-	max-inline-size: 35rem;
-	margin-inline-start: 4.5rem;
-	margin-block-start: 3rem;
-	padding-block-start: 5rem;
-	text-align: justify;
-}
-
-.figures blockquote.quote-three::first-letter {
-	font-family: "ltc-goudy-text-pro-shaded", serif;
-	font-weight: 500;
-	font-size: 6.2rem;
-	float: inline-start;
-	margin-inline-end: 0.1rem;
-	padding: 0.2rem;
-}
-
-.quote-three+figcaption {
-	margin-inline-start: 4rem;
-	max-inline-size: 35rem;
-	margin-block-start: 1rem;
-	padding-block-end: 3rem;
-
-	a {
-		text-decoration: underline;
+	figcaption {
+		margin-inline-start: 1rem;
+		max-width: 35ch;
 	}
 
-	a:hover {
-		color: #8c8c8c;
+	.figures blockquote.quote-two {
+		font-size: 1rem;
+		line-height: 1rem;
+		width: 35ch;
+		scale: 100%;
+		padding: 0rem;
+		margin-inline-start: 1rem;
+		margin-block-start: 6rem;
+	}
+
+	.quote-two+figcaption {
+		margin-inline-start: 1rem;
+		max-inline-size: 25rem;
+		margin-block-start: 2rem;
+
+		a {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			color: #8c8c8c;
+		}
+	}
+
+	.figures blockquote.quote-three {
+		font-size: 1rem;
+		line-height: 1;
+		max-width: 40ch;
+		margin-inline-start: 1rem;
+		margin-block-start: 3rem;
+		text-align: justify;
+	}
+
+	.figures blockquote.quote-three::first-letter {
+		font-family: "ltc-goudy-text-pro-shaded", serif;
+		font-weight: 500;
+		font-size: 2em;
+		max-width: 25ch;
+		float: inline-start;
+		margin-inline-end: 0.1rem;
+		padding: 0.2rem;
+	}
+
+	.quote-three+figcaption {
+		margin-inline-start: 1rem;
+		margin-block-start: 1rem;
+		padding-block-end: 3rem;
+
+		a {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			color: #8c8c8c;
+		}
+	}
+
+	.footnotes {
+		margin-inline-start: 0rem;
+	}
+
+	.footnotes-continued {
+		font-size: 0.8rem;
+		margin-block-end: 1rem;
+		margin-inline-start: 0rem;
+	}
+
+	#response {
+		width: 100%;
+		color: black;
+		padding-block-start: 5rem;
+	}
+
+	h2 {
+		text-align: center;
+
+		span {
+			display: block;
+			margin-block-start: 10rem;
+		}
+
+		span:nth-child(1) {
+			letter-spacing: normal;
+			font-size: 3rem;
+		}
+
+		span:nth-child(2) {
+			font-size: 3rem;
+			color: blue;
+		}
+	}
+	.intro-response {
+		p.author-date {
+			font-size: 1rem;
+			font-weight: 500;
+			padding-inline-start: 1rem;
+			padding-block-end: 3rem;
+			margin-block-start: 15rem;
+			color: blue;
+		}
+	}
+#body {
+	.quote {
+		margin-inline-start: 0rem;
 	}
 }
-
-.footnotes-continued {
-	font-size: 0.8rem;
-	margin-block-end: 1rem;
+#reading .body {
+	blockquote {
+		padding-block: 4rem;
+		max-inline-size: auto;
+		margin-inline-start: 2rem;
+		margin-inline-end: 2rem;
+		text-wrap: balance;
+	}
 }
+#response {
+	blockquote {
+		padding-block: 4rem;
+		max-inline-size: auto;
+		margin-inline-start: 2rem;
+		margin-inline-end: 2rem;
+		text-wrap: balance;
+	}
+}
+footer {
+	margin-block: 0rem;
+	padding-block: 0rem;
+	overflow-x: hidden;
 
+	p {
+		font-size: 2rem;
+	}
+}
 }
